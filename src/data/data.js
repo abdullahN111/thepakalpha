@@ -1,7 +1,7 @@
-import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innovation.jpg"
-import GlobalVision from "../.././public/images/aboutus/global_vision.jpg"
-import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg"
-import QualityFirst from "../.././public/images/aboutus/quality_first.png"
+import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innovation.jpg";
+import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
+import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
+import QualityFirst from "../.././public/images/aboutus/quality_first.png";
 
 export const aboutUsData = [
   {
@@ -27,5 +27,26 @@ export const aboutUsData = [
     title: "Quality-First Manufacturing",
     desc: "Every product reflects international standards, backed by rigorous quality control and a promise to build, bond, and beautify spaces with precision and care.",
     image: QualityFirst,
+  },
+];
+
+export const productsData = [
+  {
+    id: 1,
+    title: "Tile Grout",
+    description: `A high-quality, durable solution designed to fill gaps between tiles, ensuring a seamless and long-lasting finish. Our grout is resistant to cracks, stains, and moisture, making it ideal for both residential and commercial spaces.`,
+    image: GrowthAndInnovation,
+  },
+  {
+    id: 2,
+    title: "Tile Bond",
+    description: `A strong and reliable adhesive designed for securing tiles firmly in place. Our high-performance tile bond ensures excellent grip, durability, and resistance to moisture, preventing tile displacement over time.`,
+    image: GlobalVision,
+  },
+  {
+    id: 3,
+    title: "Wall Putty",
+    description: `A smooth and durable base for flawless walls! Our high-quality wall putty fills cracks, evens out rough surfaces. It provides a strong, moisture-resistant layer that protects walls from peeling and dampness.`,
+    image: StrongPartnership,
   },
 ];

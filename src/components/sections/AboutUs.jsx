@@ -24,9 +24,9 @@ const AboutUs = () => {
 
   return (
     <section className="max-width mx-auto font-poppins">
-      <div className="flex flex-col gap-10">
-        <div className="bg-white py-10 px-8">
-          <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto">
+      <div className="flex flex-col gap-10 py-12">
+        <div className="bg-white">
+          <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
             <h2 className="my-4 text-primary text-4xl font-bold text-center">
               About Our Offerings
             </h2>
@@ -41,7 +41,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center pt-8 w-full overflow-hidden px-16 sm:px-4 angled-section">
+        <div className="flex items-center justify-center pt-8 w-full overflow-hidden px-16 xsx:px-16 sm:px-4 angled-section">
           <Carousel className="w-full max-w-sm mx-auto">
             <CarouselContent>
               {aboutUsData.map((item) => (
@@ -63,7 +63,7 @@ const AboutUs = () => {
                     />
 
                     <div className="absolute inset-0 bg-black/30 text-white flex items-end transition-all duration-300 p-4 group-hover:bg-black/60">
-                      <p className="text-[13px] xs:text-sm sm:text-base w-full line-clamp-1 group-hover:line-clamp-none transition-all duration-300 ease-in-out max-h-[3.5rem] group-hover:max-h-[100%] overflow-hidden">
+                      <p className="text-[13px] xs:text-[15px] sm:text-[17px] w-full line-clamp-1 group-hover:line-clamp-none transition-all duration-300 ease-in-out max-h-[3.5rem] group-hover:max-h-[100%] overflow-hidden">
                         {item.desc}
                       </p>
                     </div>

@@ -46,7 +46,8 @@
 }
 
 @theme {
-  --breakpoint-xs: 400px;
+  --breakpoint-xs: 360px;
+  --breakpoint-xsx: 480px;
 }
 
 @layer utilities {
@@ -57,11 +58,9 @@
 
   /* Colors */
 
-
   .angled-section {
     position: relative;
     overflow: hidden;
-  
   }
 
   .angled-section::before {
@@ -71,10 +70,23 @@
     left: 0;
     height: 100%;
     width: 100%;
+
     background-color: var(--color-primary);
     clip-path: polygon(40% 70%, 100% 0, 100% 80%, 0% 100%);
     z-index: 0;
+  }
 
+  .angled-bg-shape {
+    background-color: var(--color-primary);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    height: 100%;
+    width: 100%;
+    inset: 0;
+  }
+
+  .angled-products-section {
+    position: relative;
+    overflow: hidden;
   }
 
   .bg-primary {
