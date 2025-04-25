@@ -46,8 +46,9 @@
 }
 
 @theme {
-  --breakpoint-xs: 360px;
+  --breakpoint-lgs: 1160px;
   --breakpoint-xsx: 480px;
+  --breakpoint-xs: 360px;
 }
 
 @layer utilities {

@@ -40,8 +40,8 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-
-        <div className="flex items-center justify-center pt-8 w-full overflow-hidden px-16 xsx:px-16 sm:px-4 angled-section">
+        <hr className="border-t-2 text-black/30" />
+        <div className="flex items-center justify-center pt-4 w-full overflow-hidden px-16 xsx:px-16 sm:px-4 angled-section">
           <Carousel className="w-full max-w-sm mx-auto">
             <CarouselContent>
               {aboutUsData.map((item) => (

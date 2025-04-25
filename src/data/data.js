@@ -34,19 +34,19 @@ export const productsData = [
   {
     id: 1,
     title: "Tile Grout",
-    description: `A high-quality, durable solution designed to fill gaps between tiles, ensuring a seamless and long-lasting finish. Our grout is resistant to cracks, stains, and moisture, making it ideal for both residential and commercial spaces.`,
+    description: `A high-quality, durable solution to fill gaps between tiles, ensuring a seamless, long-lasting finish. Our grout resists cracks, stains, and moisture, ideal for residential and commercial spaces.`,
     image: GrowthAndInnovation,
   },
   {
     id: 2,
     title: "Tile Bond",
-    description: `A strong and reliable adhesive designed for securing tiles firmly in place. Our high-performance tile bond ensures excellent grip, durability, and resistance to moisture, preventing tile displacement over time.`,
+    description: `A strong, reliable adhesive designed to secure tiles firmly in place. Our high-performance tile bond ensures excellent grip, durability, and moisture resistance, preventing displacement over time.`,
     image: GlobalVision,
   },
   {
     id: 3,
     title: "Wall Putty",
-    description: `A smooth and durable base for flawless walls! Our high-quality wall putty fills cracks, evens out rough surfaces. It provides a strong, moisture-resistant layer that protects walls from peeling and dampness.`,
+    description: `A smooth, durable base for flawless walls! Our high-quality wall putty fills cracks, evens rough surfaces, and provides a strong, moisture-resistant layer that protects from peeling and dampness.`,
     image: StrongPartnership,
   },
 ];
