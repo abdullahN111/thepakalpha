@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { aboutUsData } from "@/data/data";
 import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
@@ -28,7 +28,7 @@ const AboutUs = () => {
         <div className="bg-white">
           <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
             <h2 className="my-4 text-primary text-4xl font-bold text-center">
-              About Our Offerings
+              Who Are We
             </h2>
             <p className="color-black text-base xs:text[17px] sm:text-lg text-center">
               We manufacture high-quality tile bond, grout, tile grout, and wall
@@ -42,7 +42,13 @@ const AboutUs = () => {
         </div>
         <hr className="border-t-2 text-black/30" />
         <div className="flex items-center justify-center pt-4 w-full overflow-hidden px-16 xsx:px-16 sm:px-4 angled-section">
-          <Carousel className="w-full max-w-sm mx-auto">
+          <Carousel
+            className="w-full max-w-sm mx-auto"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
             <CarouselContent>
               {aboutUsData.map((item) => (
                 <CarouselItem

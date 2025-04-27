@@ -7,9 +7,16 @@ import { useEffect, useState } from "react";
 import PrimaryButton from "../PrimaryButton";
 import ProductCardsButton from "./ProductCardsButton";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+
+} from "@/components/ui/carousel";
+
 const Products = () => {
-  const [startIndex, setStartIndex] = useState(0);
   const [visibleCards, setVisibleCards] = useState(2);
+  const [api, setApi] = useState();
 
   useEffect(() => {
     const handleResize = () => {
@@ -21,19 +28,15 @@ const Products = () => {
   }, []);
 
   const nextSlide = () => {
-    if (startIndex + visibleCards < productsData.length) {
-      setStartIndex((prev) => prev + 1);
-    }
+    api?.scrollNext();
   };
 
   const prevSlide = () => {
-    if (startIndex > 0) {
-      setStartIndex((prev) => prev - 1);
-    }
+    api?.scrollPrev();
   };
 
   return (
-    <section className="max-width mx-auto bg-black/60 relative w-full overflow-hidden">
+    <section className="max-width mx-auto bg-black/40 relative w-full overflow-hidden">
       <Image
         src={Banner}
         alt="Pak Alpha Manufacturing"
@@ -61,50 +64,53 @@ const Products = () => {
         </div>
 
         <div className="w-full max-w-[700px] overflow-hidden py-4 sm:py-0">
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{
-              transform: `translateX(-${(startIndex * 100) / visibleCards}%)`,
-            }}
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            className="w-full"
+            setApi={setApi}
           >
-            {productsData.map((product) => (
-              <div
-                key={product.id}
-                className="w-full sm:w-1/2 flex-shrink-0 px-3"
-              >
-                <div className="aspect-[3/4] perspective lgs:py-8">
-                  <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
-                    <div className="absolute inset-0 rounded-tr-[30px] rounded-bl-[30px] overflow-hidden shadow-lg text-black backface-hidden">
-                      <Image
-                        src={product.image}
-                        alt={product.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute bottom-0 bg-black/50 w-full px-4 py-2">
-                        <h3 className="text-white font-semibold text-lg">
+            <CarouselContent>
+              {productsData.map((product) => (
+                <CarouselItem
+                  key={product.id}
+                  className={`w-full ${
+                    visibleCards === 1 ? "basis-full" : "basis-1/2"
+                  } flex-shrink-0 px-3`}
+                >
+                  <div className="aspect-[3/4] perspective lgs:py-8">
+                    <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d hover:rotate-y-180">
+                      <div className="absolute inset-0 rounded-tr-[30px] rounded-bl-[30px] overflow-hidden shadow-lg text-black backface-hidden">
+                        <Image
+                          src={product.image}
+                          alt={product.title}
+                          className="w-full h-full object-cover"
+                        />
+                        <div className="absolute bottom-0 bg-black/50 w-full px-4 py-2">
+                          <h3 className="text-white font-semibold text-lg">
+                            {product.title}
+                          </h3>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 rounded-br-[30px] rounded-tl-[30px] bg-white p-4 text-gray-800 transform rotate-y-180 backface-hidden overflow-y-auto">
+                        <h3 className="font-semibold text-xl my-1 text-primary">
                           {product.title}
                         </h3>
+                        <p className="text-[15px] md:text-base color-black leading-relaxed mb-3 sm:mb-5">
+                          {product.description}
+                        </p>
+                        <PrimaryButton
+                          text="See Details"
+                          textColor="color-black"
+                          borderColor="border-black"
+                          arrowColor="color-black"
+                        />
                       </div>
                     </div>
-                    <div className="absolute inset-0 rounded-br-[30px] rounded-tl-[30px] bg-white p-4 text-gray-800 transform rotate-y-180 backface-hidden overflow-y-auto">
-                      <h3 className="font-semibold text-xl my-1 text-primary">
-                        {product.title}
-                      </h3>
-                      <p className="text-[15px] md:text-base color-black leading-relaxed mb-3 sm:mb-5">
-                        {product.description}
-                      </p>
-                      <PrimaryButton
-                        text="See Details"
-                        textColor="color-black"
-                        borderColor="border-black"
-                        arrowColor="color-black"
-                      />
-                    </div>
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
 
         <ProductCardsButton

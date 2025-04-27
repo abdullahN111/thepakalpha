@@ -50,3 +50,37 @@ export const productsData = [
     image: StrongPartnership,
   },
 ];
+
+export const messageData = [
+  {
+    id: 1,
+    title: "Building Excellence with Every Step",
+    desc: `At Pak Alpha Manufacturing, I, Asadullah, take
+ great pride in leading a company that thrives
+ on growth and innovation. Our journey took a
+ major step forward in 2023 with the launch of
+ our manufacturing division, opening doors to
+ new opportunities and global expansion.`,
+  },
+  {
+    id: 2,
+    title: "Commitment to Quality and Innovation",
+    desc: `With
+ a commitment to quality and excellence, we
+ are dedicated to producing industry-leading
+ solutions that meet international standards. This new endeavor has
+ placed Pak Alpha International on a strong trajectory
+ toward becoming a key player in global markets.
+`,
+  },
+  {
+    id: 3,
+    title: "Expanding Global Reach and Partnerships",
+    desc: `As we move forward, my vision is to establish
+ Pak Alpha Manufacturing as a trusted name in
+ the Gulf markets. We are focused on building
+ strong partnerships and ensuring that our
+ products continue to reflect the reliability and
+ excellence our customers expect.`,
+  },
+];
