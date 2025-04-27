@@ -51,10 +51,11 @@ const MessageCEO = () => {
   return (
     <section
       ref={sectionRef}
-      className="max-width mx-auto px-6 lgs:px-12 py-16 bg-white relative overflow-hidden"
+      className="max-width mx-auto bg-white relative overflow-hidden"
     >
-      <div className="flex flex-col lgs:flex-row items-center gap-12">
+      <div className="flex flex-col lgs:flex-row items-center gap-12 px-8 lgs:px-12 py-20 sm:py-30">
         <div className="w-full lgs:w-1/2">
+          <div className="absolute top-0 left-0 w-full h-full z-0 angled-bg-shape-message" />
           <div className="relative rounded-tr-[30px] rounded-bl-[30px] overflow-hidden shadow-lg">
             <Image
               src={Banner}
