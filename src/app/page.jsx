@@ -5,11 +5,11 @@ import Products from "@/components/sections/Products";
 
 export default function Home() {
   return (
-    <div>
-      <Hero />
+    <main>
+      <Hero height="h-screen" />
       <AboutUs />
       <Products />
       <MessageCEO />
-    </div>
+    </main>
   );
 }

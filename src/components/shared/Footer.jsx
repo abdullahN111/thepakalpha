@@ -82,7 +82,15 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto py-12 px-4 md:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto py-10 px-4 md:px-8 grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div>
+          <h3 className="font-bold mb-4">Address</h3>
+          <ul className="space-y-1 text-gray-400">
+            <li>Al-Kharj Industrial City,</li>
+            <li>Modon, Riyadh,</li>
+            <li>Saudia Arabia</li>
+          </ul>
+        </div>
         <div>
           <h3 className="font-bold mb-4">Build Better</h3>
           <ul className="space-y-2 text-gray-400">

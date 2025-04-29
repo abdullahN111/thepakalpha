@@ -5,7 +5,7 @@ import Banner from "../../../public/images/banner3.png";
 import { useState, useEffect } from "react";
 import PrimaryButton from "../PrimaryButton";
 
-const Hero = () => {
+const Hero = ({height}) => {
   const [highlightIndex, setHighlightIndex] = useState(0);
   const words = ["BUILD.", "BOND.", "BEAUTIFY."];
 
@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="max-width mx-auto relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <section className={`max-width mx-auto relative w-full ${height} flex items-center justify-center overflow-hidden`}>
       <Image
         src={Banner}
         alt="Pak Alpha Manufacturing"

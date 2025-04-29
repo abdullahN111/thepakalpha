@@ -1,9 +1,15 @@
-import React from 'react'
+import AboutUs from "@/components/sections/AboutUs";
+import Hero from "@/components/sections/Hero";
+import MessageCEO from "@/components/sections/MessageCEO";
 
 const OurStory = () => {
   return (
-    <div>OurStory</div>
-  )
-}
+    <main>
+      <Hero height="h-[80vh]" />
+      <AboutUs />
+      <MessageCEO />
+    </main>
+  );
+};
 
-export default OurStory
+export default OurStory;
