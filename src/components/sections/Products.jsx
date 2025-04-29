@@ -11,7 +11,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-
 } from "@/components/ui/carousel";
 
 const Products = () => {
@@ -36,7 +35,10 @@ const Products = () => {
   };
 
   return (
-    <section className="max-width mx-auto bg-black/40 relative w-full overflow-hidden">
+    <section
+      className="font-poppins max-width mx-auto bg-black/20 relative w-full overflow-hidden"
+      id="products"
+    >
       <Image
         src={Banner}
         alt="Pak Alpha Manufacturing"
@@ -63,7 +65,7 @@ const Products = () => {
           <div className="absolute top-0 left-0 w-full h-full -z-10 angled-bg-shape" />
         </div>
 
-        <div className="w-full max-w-[700px] overflow-hidden py-4 sm:py-0">
+        <div className="w-full max-w-[700px] overflow-hidden py-8 sm:py-0">
           <Carousel
             opts={{ align: "start", loop: true }}
             className="w-full"

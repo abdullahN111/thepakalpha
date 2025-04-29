@@ -51,7 +51,7 @@ const MessageCEO = () => {
   return (
     <section
       ref={sectionRef}
-      className="max-width mx-auto bg-white relative overflow-hidden"
+      className="max-width mx-auto bg-white relative overflow-hidden font-poppins" id="message"
     >
       <div className="flex flex-col lgs:flex-row items-center gap-12 px-8 lgs:px-12 py-20 sm:py-30">
         <div className="w-full lgs:w-1/2">

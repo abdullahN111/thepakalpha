@@ -23,7 +23,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="max-width mx-auto font-poppins">
+    <section className="max-width mx-auto font-poppins" id="story">
       <div className="flex flex-col gap-10 py-12">
         <div className="bg-white">
           <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
