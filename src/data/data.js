@@ -2,6 +2,7 @@ import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innova
 import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
 import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
 import QualityFirst from "../.././public/images/aboutus/quality_first.png";
+import TileGrout from "../.././public/images/products/tile_grout.png";
 
 export const aboutUsData = [
   {
@@ -35,19 +36,19 @@ export const productsData = [
     id: 1,
     title: "Tile Grout",
     description: `A high-quality, durable solution to fill gaps between tiles, ensuring a seamless, long-lasting finish. Our grout resists cracks, stains, and moisture, ideal for residential and commercial spaces.`,
-    image: GrowthAndInnovation,
+    image: TileGrout,
   },
   {
     id: 2,
     title: "Tile Bond",
     description: `A strong, reliable adhesive designed to secure tiles firmly in place. Our high-performance tile bond ensures excellent grip, durability, and moisture resistance, preventing displacement over time.`,
-    image: GlobalVision,
+    image: TileGrout,
   },
   {
     id: 3,
     title: "Wall Putty",
     description: `A smooth, durable base for flawless walls! Our high-quality wall putty fills cracks, evens rough surfaces, and provides a strong, moisture-resistant layer that protects from peeling and dampness.`,
-    image: StrongPartnership,
+    image: TileGrout,
   },
 ];
 
@@ -82,5 +83,44 @@ export const messageData = [
  strong partnerships and ensuring that our
  products continue to reflect the reliability and
  excellence our customers expect.`,
+  },
+];
+
+export const figureFactsData = [
+  {
+    id: 1,
+    title: "Employees",
+    count: 200,
+    plus: "+",
+  },
+  {
+    id: 2,
+    title: "Production Lines",
+    count: 10,
+    plus: "+",
+  },
+  {
+    id: 3,
+    title: "Customers",
+    count: 1000,
+    plus: "+",
+  },
+  {
+    id: 4,
+    title: "Projects",
+    count: 200,
+    plus: "+",
+  },
+  {
+    id: 5,
+    title: "Products Shipped/Daily",
+    count: 200,
+    plus: "+",
+  },
+  {
+    id: 6,
+    title: "Turnover/Daily",
+    count: 1,
+    plus: "M+",
   },
 ];

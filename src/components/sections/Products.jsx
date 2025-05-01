@@ -36,7 +36,7 @@ const Products = () => {
 
   return (
     <section
-      className="font-poppins max-width mx-auto bg-black/20 relative w-full overflow-hidden"
+      className="max-width mx-auto bg-black/30 relative w-full overflow-hidden"
       id="products"
     >
       <Image
@@ -45,7 +45,7 @@ const Products = () => {
         layout="fill"
         objectFit="cover"
         priority
-        className="-z-10"
+        className="-z-10 opacity-60"
       />
       <div className="px-8 xs:px-14 xsx:px-[105px] sm:px-10 md:px-20 lg:px-12 lg:pr-30 py-0 font-poppins flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10">
         <div className="relative w-full lg:w-1/3 lg:h-[500px] px-3 lg:px-5 py-10">

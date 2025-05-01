@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ease-in-out max-width mx-auto 
-        ${scrolled ? "bg-black/50 shadow-md" : "bg-transparent"}
+        ${scrolled ? "bg-black/60 shadow-md" : "bg-transparent"}
         text-white`}
     >
       <div className="flex justify-between items-center py-5 px-2 sm:px-8 h-18">
@@ -33,7 +33,7 @@ const Header = () => {
             width={75}
             height={75}
           />
-          <h3 className="text-lg sm:text-[22px] font-poppins flex gap-[5px] sm:gap-2 items-center">
+          <h3 className="text-lg sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
             <span className="font-normal text-primary">Pak</span>
             <span className="font-bold">Alpha</span>
           </h3>

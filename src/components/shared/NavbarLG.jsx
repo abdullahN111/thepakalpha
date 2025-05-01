@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavbarLG = () => {
   return (
     <nav>
-      <ul className="flex items-center space-x-8 text-[19px] font-poppins">
+      <ul className="flex items-center space-x-6 lg:space-x-8 text-lg lg:text-[19px]">
         <Link href="/">
           <li className="hover-primary">Home</li>
         </Link>

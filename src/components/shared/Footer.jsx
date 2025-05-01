@@ -11,7 +11,7 @@ import Logo from "../../../public/images/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="max-width bg-black text-white font-poppins">
+    <footer className="max-width bg-black text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 py-10 px-4 md:px-8">
         <div className="flex flex-col gap-6">
           <Link href="/" className="flex items-center gap-2">
