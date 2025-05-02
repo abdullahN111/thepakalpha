@@ -2,7 +2,55 @@ import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innova
 import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
 import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
 import QualityFirst from "../.././public/images/aboutus/quality_first.png";
-import TileGrout from "../.././public/images/products/tile_grout.png";
+import TileGrout from "../.././public/images/products/tile_grout2.png";
+import Banner16 from "../.././public/images/banner16.jpg";
+import Banner14 from "../.././public/images/banner14.jpg";
+import Banner12 from "../.././public/images/banner12.jpg";
+import Banner11 from "../.././public/images/banner11.jpg";
+import Banner10 from "../.././public/images/banner10.jpg";
+import Banner9 from "../.././public/images/banner9.jpg";
+import Banner15 from "../.././public/images/banner15.jpg";
+import Banner13 from "../.././public/images/banner13.jpg";
+import Banner17 from "../.././public/images/banner17.jpg";
+
+
+export const heroData = [
+  {
+    id: 1,
+    title: ["Build.", "Bond.", "Beautify."],
+    desc: "Pak Alpha Manufacturing is your trusted partner for high-quality manufacturing solutions, specializing in tile grout, tile bond, and wall putty.",
+    image: Banner15,
+    buttonText: "Contact Us",
+    buttonLink: "/contact"
+  },
+  {
+    id: 2,
+    title: ["Innovate.", "Expand.", "Excel."],
+    desc: "From manufacturing to precision printing — quality that goes beyond borders.",
+    image: Banner14,
+    buttonText: "Learn More",
+    buttonLink: "/our-story"
+  },
+  {
+    id: 3,
+    title: ["Quality.", "Reliability.", "Trust."],
+    desc: "Pak Alpha Manufacturing is your trusted partner for high-quality manufacturing solutions, specializing in tile grout, tile bond, and wall putty.",
+    image: Banner10,
+    buttonText: "See Products",
+    buttonLink: "#products"
+  },
+  {
+    id: 4,
+    title: ["Innovate.", "Expand.", "Excel."],
+    desc: "From manufacturing to precision printing — quality that goes beyond borders.",
+    image: Banner11,
+    buttonText: "See Profile",
+    buttonLink: "/"
+  },
+
+
+]
+
 
 export const aboutUsData = [
   {

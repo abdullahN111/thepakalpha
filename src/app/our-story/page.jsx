@@ -1,22 +1,16 @@
 import AboutUs from "@/components/sections/AboutUs";
-import Hero from "@/components/sections/Hero";
+import Banner from "@/components/sections/Banner";
 import MessageCEO from "@/components/sections/MessageCEO";
 
-import Banner from "../../../public/images/banner6.jpg";
+import Banner6 from "../../../public/images/banner6.jpg";
+import FigureFacts from "@/components/sections/FigureFacts";
 
 const OurStory = () => {
   return (
     <main>
-      <Hero
-        height="h-[75vh]"
-        banner={Banner}
-        showButton={false}
-        word1="Innovate."
-        word2="Expand."
-        word3="Excel."
-        text="From manufacturing to precision printing — quality that goes beyond borders."
-      />
+      <Banner banner={Banner6} title="Our Story" />
       <AboutUs />
+      <FigureFacts showButton={false} />
       <MessageCEO />
     </main>
   );

@@ -26,16 +26,16 @@ const Header = () => {
         text-white`}
     >
       <div className="flex justify-between items-center py-5 px-2 sm:px-8 h-18">
-        <Link href="/" className="flex items-center gap-0 sm:gap-[6px]">
+        <Link href="/" className="flex items-center">
           <Image
             src={Logo}
             alt="Pak Alpha Manufacturing"
-            width={75}
-            height={75}
+            width={80}
+            height={80}
           />
-          <h3 className="text-lg sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
-            <span className="font-normal text-primary">Pak</span>
-            <span className="font-bold">Alpha</span>
+          <h3 className="text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
+            <span className="poppins-semibold-italic text-primary">Pak</span>
+            <span className="poppins-extrabold">Alpha</span>
           </h3>
         </Link>
         <div className="hidden md:block mr-10">

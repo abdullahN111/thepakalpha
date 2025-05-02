@@ -1,7 +1,7 @@
 "use client";
 
 import { productsData } from "@/data/data";
-import Banner from "../../../public/images/banner5.png";
+import Banner from "../../../public/images/banner6.jpg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import PrimaryButton from "../PrimaryButton";
@@ -39,18 +39,17 @@ const Products = () => {
       className="max-width mx-auto bg-black/30 relative w-full overflow-hidden"
       id="products"
     >
-      <Image
-        src={Banner}
-        alt="Pak Alpha Manufacturing"
-        layout="fill"
-        objectFit="cover"
-        priority
-        className="-z-10 opacity-60"
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-60"
+        style={{
+          backgroundImage: `url(${Banner.src})`,
+          backgroundAttachment: "fixed",
+        }}
       />
-      <div className="px-8 xs:px-14 xsx:px-[105px] sm:px-10 md:px-20 lg:px-12 lg:pr-30 py-0 font-poppins flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10">
-        <div className="relative w-full lg:w-1/3 lg:h-[500px] px-3 lg:px-5 py-10">
+      <div className="px-8 xs:px-14 xsx:px-[105px] sm:px-10 md:px-20 lg:px-12 lg:pr-30 py-0 pb-10 lg:pb-0 font-poppins flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10">
+        <div className="relative w-full lg:w-1/3 lg:h-[600px] px-3 lg:px-5 py-10">
           <div className="angled-products-section relative z-10 px-6 py-2 text-center lg:text-left flex flex-col justify-center h-full">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
               Our Products
             </h2>
             <p className="text-white/70 mt-4 text-sm lg:text-base">
@@ -116,7 +115,7 @@ const Products = () => {
         </div>
 
         <ProductCardsButton
-          classes="flex lg:hidden items-center gap-4 mt-3 mb-16 mx-auto w-fit"
+          classes="flex lg:hidden items-center gap-4 mb-16 mx-auto w-fit"
           prevSlide={prevSlide}
           nextSlide={nextSlide}
         />

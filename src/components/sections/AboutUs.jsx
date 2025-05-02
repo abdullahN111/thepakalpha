@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className="flex flex-col gap-10 py-12">
         <div className="bg-white">
           <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
-            <h2 className="my-4 text-primary text-4xl font-bold text-center">
+            <h2 className="my-4 text-primary text-3xl sm:text-4xl font-bold text-center">
               Who Are We
             </h2>
             <p className="color-black text-base xs:text[17px] sm:text-lg text-center">

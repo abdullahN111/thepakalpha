@@ -1,86 +1,120 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
 import Image from "next/image";
 import PrimaryButton from "../PrimaryButton";
+import { heroData } from "@/data/data";
 
-const Hero = ({
-  height,
-  banner,
-  showButton = true,
-  word1,
-  word2,
-  word3,
-  text,
-}) => {
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import ProductCardsButton from "./ProductCardsButton";
+import Link from "next/link";
 
+const Slide = ({ slide }) => {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        setVisible(entry.isIntersecting);
       },
       { threshold: 0.3 }
     );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    if (ref.current) observer.observe(ref.current);
+    return () => ref.current && observer.unobserve(ref.current);
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      className={`max-width mx-auto relative w-full ${height} flex items-center justify-center overflow-hidden`}
+    <div
+      ref={ref}
+      className="relative w-full h-screen flex flex-col items-center justify-center"
     >
       <Image
-        src={banner}
-        alt="Pak Alpha Manufacturing"
+        src={slide.image}
+        alt="Hero Background"
         layout="fill"
         objectFit="cover"
         priority
         className="z-0"
       />
       <div className="absolute inset-0 bg-black/40 z-10" />
+
       <div
-        className={`relative z-20 text-center px-4 max-w-2xl transform transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        className={`relative z-20 text-center px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-700 ${
+          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-4xl md:text-[42px] color-white font-semibold leading-tight drop-shadow-xl">
-          <span className="relative space-x-2">
-            <span className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out">
-              {word1}
-            </span>
-            <span className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out">
-              {word2}
-            </span>
-            <span className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out">
-              {word3}
-            </span>
+        <h1 className="text-[34px] md:text-[40px] uppercase color-white figtree-normal leading-tight drop-shadow-xl">
+          <span className="flex flex-wrap justify-center gap-x-2">
+            {slide.title.map((word, i) => (
+              <span
+                key={i}
+                className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out"
+              >
+                {word}
+              </span>
+            ))}
           </span>
         </h1>
-        <p className="mt-2 text-base md:text-[17px] color-white font-light drop-shadow-lg">
-          {text}
+        <p className="mt-2 mb-6 text-base md:text-[17px] color-white figtree-extralight drop-shadow-lg">
+          {slide.desc}
         </p>
-        {showButton && (
+        <Link href={slide.buttonLink} passHref>
           <PrimaryButton
-            text="Learn More"
+            text={slide.buttonText}
             borderColor="border-white"
             textColor="color-white"
             arrowColor="color-white"
           />
-        )}
+        </Link>
       </div>
+
+  
+    </div>
+  );
+};
+
+const Hero = () => {
+  const [api, setApi] = useState();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (api) api.scrollNext();
+    }, 15000);
+    return () => clearInterval(interval);
+  }, [api]);
+
+  const nextSlide = () => {
+    api?.scrollNext();
+  };
+  const prevSlide = () => {
+    api?.scrollPrev();
+  };
+
+  return (
+    <section className="max-width mx-auto relative w-full h-screen overflow-hidden">
+      <Carousel opts={{ loop: true }} setApi={setApi} className="h-full w-full">
+        <CarouselContent className="h-full">
+          {heroData.map((slide) => (
+            <CarouselItem key={slide.id} className="w-full h-full">
+              <Slide
+                slide={slide}
+                prevSlide={prevSlide}
+                nextSlide={nextSlide}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+      <ProductCardsButton
+        classes="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 flex items-center gap-4"
+        prevSlide={prevSlide}
+        nextSlide={nextSlide}
+      />
     </section>
   );
 };

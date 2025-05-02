@@ -1,25 +1,40 @@
 "use client";
 
 import CountUp from "react-countup";
-import Image from "next/image";
 import Banner from "../../../public/images/banner6.jpg";
 import { figureFactsData } from "@/data/data";
 import PrimaryButton from "../PrimaryButton";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 
-const FigureFacts = () => {
+const FigureFacts = ({ showButton = true }) => {
+  const [startCount, setStartCount] = useState(false);
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setStartCount(true);
+    }
+  }, [inView]);
+
   return (
-    <section className="max-width mx-auto bg-gray-900/95 relative w-full overflow-hidden">
-      <Image
-        src={Banner}
-        alt="Pak Alpha Manufacturing"
-        layout="fill"
-        objectFit="cover"
-        priority
-        className="-z-10"
+    <section
+      ref={ref}
+      className="max-width mx-auto bg-gray-900/97 relative w-full overflow-hidden"
+    >
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-60"
+        style={{
+          backgroundImage: `url(${Banner.src})`,
+          backgroundAttachment: "fixed",
+        }}
       />
       <div className="py-16 px-6">
         <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
-          <h2 className="my-4 text-primary text-4xl font-bold text-center">
+          <h2 className="my-4 text-primary text-3xl sm:text-4xl font-bold text-center">
             FIGURES & FACTS
           </h2>
           <p className="color-white text-base xs:text[17px] sm:text-lg text-center">
@@ -35,7 +50,7 @@ const FigureFacts = () => {
                 key={item.id}
               >
                 <div className="text-[26px] xsx:text-3xl font-bold text-primary">
-                  <CountUp end={item.count} duration={5} />
+                  {startCount ? <CountUp end={item.count} duration={3} /> : 0}
                   <span>{item.plus}</span>
                 </div>
                 <h4 className="text-black text-lg xsx:text-xl font-semibold text-center">
@@ -45,11 +60,13 @@ const FigureFacts = () => {
             );
           })}
         </div>
-        <PrimaryButton
-          text="See More"
-          borderColor="border-white"
-          arrowColor="color-white"
-        />
+        {showButton && (
+          <PrimaryButton
+            text="See More"
+            borderColor="border-white"
+            arrowColor="color-white"
+          />
+        )}
       </div>
     </section>
   );
