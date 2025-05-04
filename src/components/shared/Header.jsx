@@ -38,10 +38,10 @@ const Header = () => {
             <span className="poppins-extrabold">Alpha</span>
           </h3>
         </Link>
-        <div className="hidden md:block mr-10">
+        <div className="hidden lg:block mr-10">
           <NavbarLG />
         </div>
-        <div className="block md:hidden mr-4 sm:mr-8">
+        <div className="block lg:hidden mr-4 sm:mr-8">
           <NavbarSM />
         </div>
       </div>
