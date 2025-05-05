@@ -49,7 +49,7 @@ const Products = () => {
       <div className="px-8 xs:px-14 xsx:px-[105px] sm:px-10 md:px-20 lg:px-12 lg:pr-30 py-0 pb-10 lg:pb-0 font-poppins flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10">
         <div className="relative w-full lg:w-1/3 lg:h-[600px] px-3 lg:px-5 py-10">
           <div className="angled-products-section relative z-10 px-6 py-2 text-center lg:text-left flex flex-col justify-center h-full">
-            <h2 className="text-3xl sm:text-4xl uppercase poppins-semibold text-white">
+            <h2 className="text-3xl sm:text-4xl uppercase font-semibold text-white">
               Our Products
             </h2>
             <p className="text-white/80 mt-4 text-base sm:text-[17px] poppins-light">
@@ -93,7 +93,7 @@ const Products = () => {
                         </div>
                       </div>
                       <div className="absolute inset-0 rounded-br-[30px] rounded-tl-[30px] bg-white p-4 text-gray-800 transform rotate-y-180 backface-hidden overflow-y-auto">
-                        <h3 className="poppins-semibold text-xl my-1 text-primary">
+                        <h3 className="font-semibold text-xl my-1 text-primary">
                           {product.title}
                         </h3>
                         <p className="text-[15px] md:text-base text-black/80 leading-relaxed mb-3 sm:mb-5 poppins-light">

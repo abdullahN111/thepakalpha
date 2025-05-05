@@ -27,7 +27,7 @@ const AboutUs = () => {
       <div className="flex flex-col gap-10 py-12">
         <div className="bg-white">
           <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
-            <h2 className="my-3 text-primary text-3xl sm:text-4xl uppercase poppins-semibold text-center">
+            <h2 className="my-3 text-primary text-3xl sm:text-4xl uppercase font-semibold text-center">
               Who Are We
             </h2>
             <p className="text-black/80 text-base sm:text-[17px] text-center poppins-light">
@@ -55,7 +55,7 @@ const AboutUs = () => {
                   key={item.id}
                   className="flex flex-col items-center justify-center group"
                 >
-                  <h2 className="color-black text-xl xs:text-[22px] sm:text-[26px] poppins-semibold text-center px-6 mb-4">
+                  <h2 className="color-black text-xl xs:text-[22px] sm:text-[26px] font-semibold text-center px-6 mb-4">
                     {item.title}
                   </h2>
                   <div className="relative w-full overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">

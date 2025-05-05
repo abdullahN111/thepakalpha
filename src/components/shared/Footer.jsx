@@ -23,7 +23,7 @@ const Footer = () => {
               priority
             />
             <h3 className="text-[20px] sm:text-[24px] flex gap-2 items-center">
-              <span className="poppins-semibold-italic text-primary">Pak</span>
+              <span className="font-semibold-italic text-primary">Pak</span>
               <span className="poppins-extrabold">Alpha</span>
             </h3>
           </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2 className="text-[17px] sm:text-lg poppins-semibold mb-4 md:mb-2">
+          <h2 className="text-[17px] sm:text-lg font-semibold mb-4 md:mb-2">
             Stay Updated!
           </h2>
           <div className="flex">

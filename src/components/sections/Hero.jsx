@@ -60,7 +60,7 @@ const Slide = ({ slide }) => {
             ))}
           </span>
         </h1>
-        <p className="mt-2 mb-6 text-base md:text-[17px] color-white poppins-light-italic drop-shadow-lg">
+        <p className="mt-2 mb-6 text-base md:text-[17px] color-white font-regular italic drop-shadow-lg">
           {slide.desc}
         </p>
         <Link href={slide.buttonLink} passHref>

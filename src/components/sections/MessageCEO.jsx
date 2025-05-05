@@ -89,7 +89,7 @@ const MessageCEO = () => {
               <CarouselContent>
                 {messageData.map((item) => (
                   <CarouselItem key={item.id}>
-                    <h3 className="text-[28px] lg:text-[32px] poppins-semibold text-black/80 mb-4 xl:mb-5">
+                    <h3 className="text-[28px] lg:text-[32px] font-semibold text-black/80 mb-4 xl:mb-5">
                       {item.title}
                     </h3>
                     <p className="text-black/70 text-[17px] leading-relaxed mb-3 xl:mb-4 poppins-light">
@@ -101,7 +101,7 @@ const MessageCEO = () => {
               <CarouselNext className="hidden" />
             </Carousel>
             <div>
-              <p className="text-black/80 poppins-semibold">Asadullah</p>
+              <p className="text-black/80 font-semibold">Asadullah</p>
               <p className="text-black/60 text-sm">Chief Executive Officer</p>
             </div>
           </div>
