@@ -55,7 +55,7 @@ const AboutUs = () => {
                   key={item.id}
                   className="flex flex-col items-center justify-center group"
                 >
-                  <h2 className="color-black text-xl xs:text-[22px] sm:text-[26px] font-semibold text-center px-6 mb-4">
+                  <h2 className="color-black text-xl xs:text-[22px] sm:text-[26px] font-bold text-center px-6 mb-4">
                     {item.title}
                   </h2>
                   <div className="relative w-full overflow-hidden rounded-tr-[30px] rounded-bl-[30px]">

@@ -34,7 +34,7 @@ const FigureFacts = ({ showButton = true }) => {
       />
       <div className="py-16 px-6">
         <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
-          <h2 className="my-4 text-white text-3xl sm:text-4xl uppercase font-semibold text-center">
+          <h2 className="my-4 text-white text-3xl sm:text-4xl uppercase font-bold text-center">
             FIGURES & FACTS
           </h2>
           <p className="text-white/80 text-base xs:text[17px] sm:text-lg text-center poppins-light">
@@ -53,7 +53,7 @@ const FigureFacts = ({ showButton = true }) => {
                   {startCount ? <CountUp end={item.count} duration={3} /> : 0}
                   <span>{item.plus}</span>
                 </div>
-                <h4 className="text-black text-lg xsx:text-xl font-semibold text-center">
+                <h4 className="text-black text-lg xsx:text-xl font-bold text-center">
                   {item.title}
                 </h4>
               </div>

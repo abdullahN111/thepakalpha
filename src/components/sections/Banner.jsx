@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 
-const Banner = ({ banner, title}) => {
+const Banner = ({ banner, title }) => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -46,7 +46,7 @@ const Banner = ({ banner, title}) => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-[34px] md:text-[40px] hover-primary text-white/80 opacity-60 font-semibold leading-tight drop-shadow-xl">
+        <h1 className="text-[34px] md:text-[40px] hover-primary text-white/80 opacity-60 font-bold leading-tight drop-shadow-xl">
           {title}
         </h1>
       </div>

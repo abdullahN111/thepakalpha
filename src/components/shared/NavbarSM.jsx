@@ -45,12 +45,12 @@ const NavbarSM = () => {
             height={65}
           />
           <h3 className="text-[17px] sm:text-lg flex gap-1 sm:gap-2 items-center">
-            <span className="font-semibold-italic text-primary">Pak</span>
+            <span className="font-bold-italic text-primary">Pak</span>
             <span className="poppins-extrabold color-black">Alpha</span>
           </h3>
         </Link>
 
-        <ul className="flex flex-col gap-4 px-6 mt-10 font-semibold text-[17px] text-black/80">
+        <ul className="flex flex-col gap-4 px-6 mt-10 font-bold text-[17px] text-black/80">
           <Link href="/" onClick={toggleMenu}>
             <li className="hover-primary">Home</li>
           </Link>
