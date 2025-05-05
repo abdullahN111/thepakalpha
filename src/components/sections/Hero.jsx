@@ -48,7 +48,7 @@ const Slide = ({ slide }) => {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-[34px] md:text-[40px] uppercase color-white figtree-normal leading-tight drop-shadow-xl">
+        <h1 className="text-[34px] md:text-[40px] uppercase color-white poppins-medium leading-tight drop-shadow-xl">
           <span className="flex flex-wrap justify-center gap-x-2">
             {slide.title.map((word, i) => (
               <span

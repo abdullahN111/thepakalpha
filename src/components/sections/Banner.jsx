@@ -15,7 +15,7 @@ const Banner = ({ banner, title}) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
@@ -40,13 +40,13 @@ const Banner = ({ banner, title}) => {
         priority
         className="z-0 opacity-60"
       />
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/70 z-10" />
       <div
-        className={`relative z-20 text-center px-4 sm:px-6 md:px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-700 ${
+        className={`relative z-20 text-center px-4 sm:px-6 md:px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-200 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-[34px] md:text-[40px] hover-primary text-white/90 font-semibold leading-tight drop-shadow-xl">
+        <h1 className="text-[34px] md:text-[40px] hover-primary text-white/80 opacity-60 font-semibold leading-tight drop-shadow-xl">
           {title}
         </h1>
       </div>
