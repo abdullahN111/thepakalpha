@@ -34,8 +34,8 @@ const Header = () => {
             height={80}
           />
           <h3 className="text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
-            <span className="font-semibold-italic text-primary">Pak</span>
-            <span className="poppins-extrabold">Alpha</span>
+            <span className="font-semibold italic text-primary">Pak</span>
+            <span className="font-extrabold">Alpha</span>
           </h3>
         </Link>
         <div className="hidden lg:block mr-10">
