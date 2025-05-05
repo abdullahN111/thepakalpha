@@ -44,7 +44,7 @@ const NavbarSM = () => {
             width={65}
             height={65}
           />
-          <h3 className="text-base sm:text-lg flex gap-1 sm:gap-2 items-center">
+          <h3 className="text-[17px] sm:text-lg flex gap-1 sm:gap-2 items-center">
             <span className="poppins-semibold-italic text-primary">Pak</span>
             <span className="poppins-extrabold color-black">Alpha</span>
           </h3>
