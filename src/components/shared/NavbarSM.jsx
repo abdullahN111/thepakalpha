@@ -50,7 +50,7 @@ const NavbarSM = () => {
           </h3>
         </Link>
 
-        <ul className="flex flex-col gap-4 px-6 mt-10 montserrat-semibold text-[17px] text-black/80">
+        <ul className="flex flex-col gap-4 px-6 mt-10 poppins-semibold text-[17px] text-black/80">
           <Link href="/" onClick={toggleMenu}>
             <li className="hover-primary">Home</li>
           </Link>
@@ -64,7 +64,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "our-story"
-                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] montserrat-medium"
+                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] poppins-medium"
                     : "max-h-0 opacity-0"
                 }
               `}
@@ -108,7 +108,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "products"
-                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] montserrat-medium"
+                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] poppins-medium"
                     : "max-h-0 opacity-0"
                 }
               `}

@@ -51,7 +51,8 @@ const MessageCEO = () => {
   return (
     <section
       ref={sectionRef}
-      className="max-width mx-auto bg-white relative overflow-hidden" id="message"
+      className="max-width mx-auto bg-white relative overflow-hidden"
+      id="message"
     >
       <div className="flex flex-col lgs:flex-row items-center gap-12 px-8 lgs:px-12 py-20 sm:py-30">
         <div className="w-full lgs:w-1/2">
@@ -88,7 +89,7 @@ const MessageCEO = () => {
               <CarouselContent>
                 {messageData.map((item) => (
                   <CarouselItem key={item.id}>
-                    <h3 className="text-[28px] lg:text-[32px] montserrat-semibold text-black/80 mb-4 xl:mb-5">
+                    <h3 className="text-[28px] lg:text-[32px] poppins-semibold text-black/80 mb-4 xl:mb-5">
                       {item.title}
                     </h3>
                     <p className="text-black/70 text-[17px] leading-relaxed mb-3 xl:mb-4 poppins-light">

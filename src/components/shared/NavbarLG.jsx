@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavbarLG = () => {
   return (
     <nav>
-      <ul className="flex items-center montserrat-medium text-[17px]">
+      <ul className="flex items-center poppins-medium text-[17px]">
         <Link href="/">
           <li className="hover-primary py-[6px] px-5 lg:px-6">Home</li>
         </Link>
@@ -19,19 +19,28 @@ const NavbarLG = () => {
       group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px]"
           >
             <li>
-              <Link href="/our-story" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="/our-story"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Our Story
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
-              <Link href="#story" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#story"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Who are we
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
-              <Link href="#message" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#message"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Message from CEO
               </Link>
             </li>
@@ -50,25 +59,37 @@ const NavbarLG = () => {
       group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px]"
           >
             <li>
-              <Link href="#products" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#products"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Tile Grout
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
-              <Link href="#products" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#products"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Tile Bond
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
-              <Link href="#products" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#products"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 Wall Putty
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
-              <Link href="#products" className="block px-5 lg:px-6 py-2 hover-primary">
+              <Link
+                href="#products"
+                className="block px-5 lg:px-6 py-2 hover-primary"
+              >
                 All Products
               </Link>
             </li>

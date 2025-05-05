@@ -34,7 +34,7 @@ const FigureFacts = ({ showButton = true }) => {
       />
       <div className="py-16 px-6">
         <div className="flex flex-col gap-2 items-center justify-center max-w-3xl mx-auto px-6">
-          <h2 className="my-4 text-white text-3xl sm:text-4xl uppercase montserrat-semibold text-center">
+          <h2 className="my-4 text-white text-3xl sm:text-4xl uppercase poppins-semibold text-center">
             FIGURES & FACTS
           </h2>
           <p className="text-white/80 text-base xs:text[17px] sm:text-lg text-center poppins-light">
