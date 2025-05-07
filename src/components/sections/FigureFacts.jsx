@@ -37,7 +37,7 @@ const FigureFacts = ({ showButton = true }) => {
           <h2 className="my-4 text-white text-3xl sm:text-4xl uppercase font-bold text-center">
             FIGURES & FACTS
           </h2>
-          <p className="text-white/80 text-base xs:text[17px] sm:text-lg text-center poppins-light">
+          <p className="text-white/80 text-base xs:text-[17px] sm:text-lg text-center font-normal">
             Our figures reflect our commitment to quality, innovation, and
             excellence in manufacturing.
           </p>

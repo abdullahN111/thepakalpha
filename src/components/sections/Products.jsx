@@ -12,6 +12,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 const Products = () => {
   const [visibleCards, setVisibleCards] = useState(2);
@@ -99,10 +100,12 @@ const Products = () => {
                         <p className="text-[15px] md:text-base text-black/80 leading-relaxed mb-3 sm:mb-5 poppins-light">
                           {product.description}
                         </p>
-                        <PrimaryButton
-                          text="See Details"
-                          borderColor="border-black"
-                        />
+                        <Link href={`/product/${product.id}`}>
+                          <PrimaryButton
+                            text="See Details"
+                            borderColor="border-black"
+                          />
+                        </Link>
                       </div>
                     </div>
                   </div>

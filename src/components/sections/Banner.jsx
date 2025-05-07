@@ -30,7 +30,7 @@ const Banner = ({ banner, title }) => {
   return (
     <section
       ref={sectionRef}
-      className="max-width mx-aut relative w-full h-[70vh] flex items-center justify-center overflow-hidden"
+      className="max-width mx-auto relative w-full h-[70vh] flex items-center justify-center overflow-hidden"
     >
       <Image
         src={banner}

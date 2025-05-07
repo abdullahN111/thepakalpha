@@ -11,7 +11,7 @@ import Logo from "../../../public/images/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="max-width bg-black text-white">
+    <footer className="max-width mx-auto bg-black text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 py-10 px-4 md:px-8">
         <div className="flex flex-col gap-6">
           <Link href="/" className="flex items-center gap-2">
@@ -23,8 +23,8 @@ const Footer = () => {
               priority
             />
             <h3 className="text-[20px] sm:text-[24px] flex gap-2 items-center">
-              <span className="font-bold-italic text-primary">Pak</span>
-              <span className="poppins-extrabold">Alpha</span>
+              <span className="font-bold italic text-primary">Pak</span>
+              <span className="font-extrabold">Alpha</span>
             </h3>
           </Link>
           <p className="text-white/60 poppins-light max-w-[350px]">
@@ -97,12 +97,12 @@ const Footer = () => {
             <li>
               <Link href="#story">Our Story</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#products">Our Products</Link>
             </li>
             <li>
               <Link href="#message">Our Message</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

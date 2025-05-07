@@ -51,8 +51,7 @@ const Slide = ({ slide }) => {
         <h1 className="text-[34px] md:text-[40px] uppercase color-white font-medium leading-tight drop-shadow-xl">
           <span className="flex flex-wrap justify-center gap-x-2">
             {slide.title.map((word, i) => (
-              <span
-                key={i}
+              <span                key={i}
                 className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out"
               >
                 {word}
@@ -60,7 +59,7 @@ const Slide = ({ slide }) => {
             ))}
           </span>
         </h1>
-        <p className="mt-2 mb-6 text-base md:text-[17px] color-white font-regular italic drop-shadow-lg">
+        <p className="mt-2 mb-6 text-base md:text-[17px] color-white font-normal italic drop-shadow-lg">
           {slide.desc}
         </p>
         <Link href={slide.buttonLink} passHref>

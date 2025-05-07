@@ -16,7 +16,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px]"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
             <li>
               <Link
@@ -56,7 +56,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px]"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
             <li>
               <Link
@@ -84,7 +84,7 @@ const NavbarLG = () => {
                 Wall Putty
               </Link>
             </li>
-            <hr className="border-t border-black/40 mx-4 mb-2" />
+            {/* <hr className="border-t border-black/40 mx-4 mb-2" />
             <li>
               <Link
                 href="#products"
@@ -92,7 +92,7 @@ const NavbarLG = () => {
               >
                 All Products
               </Link>
-            </li>
+            </li> */}
           </ul>
         </li>
         <Link href="/contact">
