@@ -3,72 +3,8 @@
 import { useState } from "react";
 import Banner from "../../../public/images/banner6.jpg";
 
-const instructionsData = [
-  {
-    title: "Surface Preparation",
-    content: `Tiles must be firmly attached to a sound
- subsurface and tile adhesive must be
- cured a minimum 24 hours prior to
- grout application. Remove any loose
- material or dust from tiles and joints.`,
-  },
-  {
-    title: "Mixing",
-    content: `Dry-blend powder before use. Stir tile grout
- into clean water. Power mixes at less than
- 300 RPM until you get a stiff creamy
- consistency. Use approximately 4 parts
- grout to 1 part water by volume (2 – 3) liters
- per 10 kg bag. Avoid thinning at this will
- weaken the grout.pot life of mixed grout is
- approximately 2 hours.`,
-  },
-  {
-    title: "Application",
-    content: `Lightly damped tile with clean water before grouting. This
- makes grouting easier and the finished tile clear, highly
- pours tile will require additional wetting of the joints to
- prevent excessive water loss from the grout. Float held at
- approximately 45 angles, work diagonally to joints using
- adequate pressure to ensure that grout bonds to
- subsurface and fills in joints. Remove as much excess
- grout possible from the surface of the tiles with edge of
- the rubber grout float. Allow grout to set-up approximately
- 10 to 20 minutes in joint. Soak sponge or cheese cloth
- water. Rinse out excess water completely and wipe tiles
- clean using a circular motion. Rinse sponge and rinse out
- frequently and keep water supply clean. Joints should
- become smooth and level with edges of tile. Allow
- installation to dry for approximately 30 to 45 minutes or
- until a haze forms on tile and the grout in the joints sets
- firm. Use a soft, and clean dry cloth polish off haze and dry
- remaining grout residue.`,
-  },
-  {
-    title: "Curing",
-    content: `Proper curing is necessary for grout to achieve maximum
- strength. After final soft cloth polishing, wait 2 to 4 hours,
- the lightly dampen installation with clean, cool water and
- cover entire surface for a minimum 3 days with Kraft tape
- paper with edges lapped. If this is impractical, lightly mist
- grout several times a day for 3 days.`,
-  },
-  {
-    title: "Uses",
-    content: `Tile Grout is suitable for use in
- areas ranging from residential to
- heavy commercial. Maybe used
- with all type of tile, ceramic,
- marble, slat, limestone and granite.
- It is suitable for use in commercial
- kitchens, food processing plants
- and residential floors, wall,
- swimming pools, shower and
- countertops.`,
-  },
-];
 
-const ProductInstructions = () => {
+const ProductInstructions = ({ titles, content }) => {
   const [activeIndex, setActiveIndex] = useState();
 
   const toggle = (index) => {
@@ -98,7 +34,7 @@ const ProductInstructions = () => {
             </p>
           </div>
           <div className="my-12 space-y-6 px-4 md:px-12">
-            {instructionsData.map((item, index) => (
+            {[...Array(titles.length)].map((_, index) => (
               <div
                 key={index}
                 className="bg-white rounded-tr-[30px] rounded-bl-[30px] border-gray-200 py-6 px-6 hover:shadow-sm shadow-black"
@@ -108,7 +44,7 @@ const ProductInstructions = () => {
                   onClick={() => toggle(index)}
                 >
                   <h3 className="font-bold text-lg sm:text-xl text-black/80">
-                    {item.title}
+                    {titles[index]}
                   </h3>
                   <span className="text-2xl sm:text-3xl text-primary cursor-pointer font-bold">
                     {activeIndex === index ? "–" : "+"}
@@ -129,7 +65,7 @@ const ProductInstructions = () => {
                   }`}
                 >
                   <p className="text-[17px] sm:text-lg text-black/70">
-                    {item.content}
+                    {content[index]}
                   </p>
                 </div>
               </div>
