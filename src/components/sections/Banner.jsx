@@ -1,37 +1,10 @@
-"use client";
 
-import { useEffect, useRef, useState } from "react";
 
 import Image from "next/image";
 
 const Banner = ({ banner, title }) => {
-  const sectionRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <section
-      ref={sectionRef}
-      className="max-width mx-auto relative w-full h-[70vh] flex items-center justify-center overflow-hidden"
-    >
+    <section className="max-width mx-auto relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
       <Image
         src={banner}
         alt="Pak Alpha Manufacturing"
@@ -41,12 +14,8 @@ const Banner = ({ banner, title }) => {
         className="z-0 opacity-60"
       />
       <div className="absolute inset-0 bg-black/70 z-10" />
-      <div
-        className={`relative z-20 text-center px-4 sm:px-6 md:px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-200 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-      >
-        <h1 className="text-[34px] md:text-[40px] hover-primary text-white/80 opacity-60 font-bold leading-tight drop-shadow-xl">
+      <div className="relative z-20 text-center px-4 sm:px-6 md:px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-200">
+        <h1 className="text-[34px] md:text-[40px] text-white/80 opacity-60 font-bold leading-tight drop-shadow-xl">
           {title}
         </h1>
       </div>

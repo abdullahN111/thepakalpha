@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Banner from "../../../public/images/banner6.jpg";
 
-
 const ProductInstructions = ({ titles, content }) => {
   const [activeIndex, setActiveIndex] = useState();
 
@@ -37,7 +36,7 @@ const ProductInstructions = ({ titles, content }) => {
             {[...Array(titles.length)].map((_, index) => (
               <div
                 key={index}
-                className="bg-white rounded-tr-[30px] rounded-bl-[30px] border-gray-200 py-6 px-6 hover:shadow-sm shadow-black"
+                className="bg-white rounded-tl-[30px] rounded-r-[5px] border-gray-200 py-6 px-6 hover:shadow-md shadow-black"
               >
                 <div
                   className="flex justify-between items-center"
@@ -58,7 +57,7 @@ const ProductInstructions = ({ titles, content }) => {
                   }`}
                 />
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  className={`overflow-hidden transition-all duration-600 ease-in-out ${
                     activeIndex === index
                       ? "overflow-y-auto max-h-96 mt-2"
                       : "max-h-0"

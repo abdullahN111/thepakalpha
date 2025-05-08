@@ -1,6 +1,6 @@
 "use client";
 
-import { productsData } from "@/data/data";
+import { productsData } from "@/data/productData";
 import Banner from "../../../public/images/banner6.jpg";
 import Image from "next/image";
 import { useEffect, useState } from "react";

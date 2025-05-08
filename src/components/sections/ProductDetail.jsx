@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { productsData } from "@/data/data";
+import { productsData } from "@/data/productData";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -17,7 +17,7 @@ const ProductDetail = () => {
   }
   return (
     <section className="max-width mx-auto py-12 px-6">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-16 lg:gap-12">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-10">
         <div className="basis-[40%] w-full max-w-md lg:max-w-none">
           <div className="relative w-full aspect-[6/6]">
             <Image

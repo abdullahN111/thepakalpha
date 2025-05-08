@@ -5,6 +5,7 @@ import Logo from "../../../public/images/logo.png";
 import { HiMenu } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
+import { productsData } from "@/data/productData";
 
 const NavbarSM = () => {
   const [open, setOpen] = useState(false);
@@ -113,42 +114,19 @@ const NavbarSM = () => {
                 }
               `}
             >
-              <li>
-                <Link
-                  href="#products"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  Tile Grout
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#products"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  Tile Bond
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#products"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  Wall Putty
-                </Link>
-              </li>
-              {/* <li>
-                <Link
-                  href="#products"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  All Products
-                </Link>
-              </li> */}
+             {productsData.map((product, index) => (
+               <li key={index}>
+               <Link
+                 href={`/product/${product.id}`}
+                 onClick={toggleMenu}
+                 className="block text-black/80 hover:text-[#0a73cd] py-2"
+               >
+                 {product.title}
+               </Link>
+             </li>
+             ))}
+              
+              
             </ul>
           </li>
           <hr className="border-t border-black/40 mb-2" />

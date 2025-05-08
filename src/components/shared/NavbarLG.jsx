@@ -1,4 +1,8 @@
+"use client";
+
+import { productsData } from "@/data/productData";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const NavbarLG = () => {
   return (
@@ -58,41 +62,19 @@ const NavbarLG = () => {
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
       group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
-            <li>
-              <Link
-                href="#products"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                Tile Grout
-              </Link>
-            </li>
-            <hr className="border-t border-black/40 mx-4 mb-2" />
-            <li>
-              <Link
-                href="#products"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                Tile Bond
-              </Link>
-            </li>
-            <hr className="border-t border-black/40 mx-4 mb-2" />
-            <li>
-              <Link
-                href="#products"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                Wall Putty
-              </Link>
-            </li>
-            {/* <hr className="border-t border-black/40 mx-4 mb-2" />
-            <li>
-              <Link
-                href="#products"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                All Products
-              </Link>
-            </li> */}
+            {productsData.map((product, index) => (
+              <div key={index}>
+                <li>
+                  <Link
+                    href={`/product/${product.id}`}
+                    className="block px-5 lg:px-6 py-2 hover-primary"
+                  >
+                    {product.title}
+                  </Link>
+                </li>
+                <hr className="border-t border-black/40 mx-4 mb-2" />
+              </div>
+            ))}
           </ul>
         </li>
         <Link href="/contact">
