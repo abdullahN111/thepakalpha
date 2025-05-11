@@ -82,8 +82,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-<FooterLinks />
-    
+      <FooterLinks />
+
       <div className="border-t border-gray-700 py-6 px-6 md:px-20 flex flex-col md:flex-row items-center justify-between text-white/60 poppins-light text-sm">
         <div className="flex flex-col md:flex-row gap-2 items-center space-x-2">
           <span>© Copyright Pak Alpha 2025.</span>
@@ -94,7 +94,7 @@ const Footer = () => {
             <span className="text-2xl">&#x2022; </span>{" "}
             <span>Terms and Conditions</span>
           </Link> */}
-          <Link href="/privacy" className="flex items-center gap-1">
+          <Link href="/privacy-policy" className="flex items-center gap-1">
             <span className="text-2xl">&#x2022; </span>{" "}
             <span>Privacy Policy</span>
           </Link>

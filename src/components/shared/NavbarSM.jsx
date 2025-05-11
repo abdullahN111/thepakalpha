@@ -65,7 +65,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "our-story"
-                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] font-normal"
+                    ? "max-h-60 opacity-100 mt-2 ml-5 text-base font-normal"
                     : "max-h-0 opacity-0"
                 }
               `}
@@ -79,24 +79,7 @@ const NavbarSM = () => {
                   Our Story
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#story"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  Who are we
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#message"
-                  onClick={toggleMenu}
-                  className="block text-black/80 hover:text-[#0a73cd] py-2"
-                >
-                  Message from CEO
-                </Link>
-              </li>
+             
             </ul>
           </li>
           <hr className="border-t border-black/40 mb-2" />
@@ -109,7 +92,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "products"
-                    ? "max-h-60 opacity-100 mt-2 ml-4 text-[15px] font-normal"
+                    ? "max-h-60 opacity-100 mt-2 ml-5 text-base font-normal"
                     : "max-h-0 opacity-0"
                 }
               `}

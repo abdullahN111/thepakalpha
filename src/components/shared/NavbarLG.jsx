@@ -2,7 +2,6 @@
 
 import { productsData } from "@/data/productData";
 import Link from "next/link";
-import { useParams } from "next/navigation";
 
 const NavbarLG = () => {
   return (
@@ -20,7 +19,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-base font-normal"
           >
             <li>
               <Link
@@ -31,23 +30,6 @@ const NavbarLG = () => {
               </Link>
             </li>
             <hr className="border-t border-black/40 mx-4 mb-2" />
-            <li>
-              <Link
-                href="#story"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                Who are we
-              </Link>
-            </li>
-            <hr className="border-t border-black/40 mx-4 mb-2" />
-            <li>
-              <Link
-                href="#message"
-                className="block px-5 lg:px-6 py-2 hover-primary"
-              >
-                Message from CEO
-              </Link>
-            </li>
           </ul>
         </li>
 
@@ -60,7 +42,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-base font-normal"
           >
             {productsData.map((product, index) => (
               <div key={index}>
