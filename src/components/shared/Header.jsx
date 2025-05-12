@@ -25,16 +25,19 @@ const Header = () => {
         ${scrolled ? "bg-black/70 shadow-md" : "bg-transparent"}
         text-white`}
     >
-      <div className="flex justify-between items-center py-5 px-2 sm:px-8 h-18">
+      <div className="flex justify-between items-center py-5 px-2 sm:px-8 h-19">
         <Link href="/" className="flex items-center">
           <Image
             src={Logo}
             alt="Pak Alpha Manufacturing"
             width={80}
             height={80}
+            className="mr-6"
           />
-          <h3 className="text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
-            <span className="font-bold italic text-primary">Pak</span>
+          <h3 className="relative text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
+            <span className="font-bold italic text-primary absolute text-[17px] xs:text-lg -top-2 -left-8">
+              Pak
+            </span>
             <span className="font-extrabold">Alpha</span>
           </h3>
         </Link>

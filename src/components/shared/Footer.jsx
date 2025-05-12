@@ -22,9 +22,10 @@ const Footer = () => {
               width={70}
               height={70}
               priority
+              className="mr-5"
             />
-            <h3 className="text-[20px] sm:text-[24px] flex gap-2 items-center">
-              <span className="font-bold italic text-primary">Pak</span>
+            <h3 className="relative text-lg sm:text-[22px] flex items-center">
+              <span className="font-bold italic text-primary text-[17px] sm:text-lg absolute -top-[6px] -left-8">Pak</span>
               <span className="font-extrabold">Alpha</span>
             </h3>
           </Link>

@@ -44,9 +44,12 @@ const NavbarSM = () => {
             alt="Pak Alpha Manufacturing"
             width={65}
             height={65}
+            className="mr-6"
           />
-          <h3 className="text-[17px] sm:text-lg flex gap-1 sm:gap-2 items-center">
-            <span className="font-bold italic text-primary">Pak</span>
+          <h3 className="relative text-[17px] sm:text-lg flex gap-1 sm:gap-2 items-center">
+            <span className="font-bold italic text-primary text-base sm:text-[17px] absolute -top-[6px] -left-7">
+              Pak
+            </span>
             <span className="font-extrabold color-black">Alpha</span>
           </h3>
         </Link>
@@ -79,7 +82,6 @@ const NavbarSM = () => {
                   Our Story
                 </Link>
               </li>
-             
             </ul>
           </li>
           <hr className="border-t border-black/40 mb-2" />
@@ -97,19 +99,17 @@ const NavbarSM = () => {
                 }
               `}
             >
-             {productsData.map((product, index) => (
-               <li key={index}>
-               <Link
-                 href={`/product/${product.id}`}
-                 onClick={toggleMenu}
-                 className="block text-black/80 hover:text-[#0a73cd] py-2"
-               >
-                 {product.title}
-               </Link>
-             </li>
-             ))}
-              
-              
+              {productsData.map((product, index) => (
+                <li key={index}>
+                  <Link
+                    href={`/product/${product.id}`}
+                    onClick={toggleMenu}
+                    className="block text-black/80 hover:text-[#0a73cd] py-2"
+                  >
+                    {product.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </li>
           <hr className="border-t border-black/40 mb-2" />
