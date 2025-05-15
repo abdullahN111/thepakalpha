@@ -46,11 +46,11 @@ const NavbarSM = () => {
             height={65}
             className="mr-6"
           />
-          <h3 className="relative text-[17px] sm:text-lg flex gap-1 sm:gap-2 items-center">
+          <h3 className="relative text-[16px] sm:text-[17px] flex gap-1 sm:gap-2 items-center">
             <span className="font-bold italic text-primary text-base sm:text-[17px] absolute -top-[6px] -left-7">
               Pak
             </span>
-            <span className="font-extrabold color-black">Alpha</span>
+            <span className="main-heading color-black">Alpha</span>
           </h3>
         </Link>
 

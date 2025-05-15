@@ -4,7 +4,7 @@ import StrongPartnership from "../.././public/images/aboutus/strong_partnership.
 import QualityFirst from "../.././public/images/aboutus/quality_first.png";import Banner16 from "../.././public/images/banner16.jpg";
 import Banner14 from "../.././public/images/banner14.jpg";
 import Banner12 from "../.././public/images/banner12.jpg";
-import Banner11 from "../.././public/images/banner11.jpg";
+import Banner18 from "../.././public/images/banner18.jpg";
 import Banner10 from "../.././public/images/banner10.jpg";
 import Banner9 from "../.././public/images/banner9.jpg";
 import Banner15 from "../.././public/images/banner15.jpg";
@@ -40,7 +40,7 @@ export const heroData = [
     id: 4,
     title: ["Innovate.", "Expand.", "Excel."],
     desc: "From manufacturing to precision printing — quality that goes beyond borders.",
-    image: Banner11,
+    image: Banner18,
     buttonText: "See Profile",
     buttonLink: "/",
   },

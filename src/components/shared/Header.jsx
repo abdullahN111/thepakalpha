@@ -35,10 +35,10 @@ const Header = () => {
             className="mr-6"
           />
           <h3 className="relative text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
-            <span className="font-bold italic text-primary absolute text-[17px] xs:text-lg -top-2 -left-8">
+            <span className="font-bold italic text-primary absolute text-[16px] xs:text-[17px] -top-2 -left-7">
               Pak
             </span>
-            <span className="font-extrabold">Alpha</span>
+            <span className="main-heading">Alpha</span>
           </h3>
         </Link>
         <div className="hidden lg:block mr-10">
