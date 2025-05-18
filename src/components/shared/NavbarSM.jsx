@@ -47,14 +47,14 @@ const NavbarSM = () => {
             className="mr-6"
           />
           <h3 className="relative text-[16px] sm:text-[17px] flex gap-1 sm:gap-2 items-center">
-            <span className="font-bold italic text-primary text-base sm:text-[17px] absolute -top-[6px] -left-7">
+            <span className="font-bold italic text-primary text-base sm:text-[17px] absolute -top-[6px] -left-8">
               Pak
             </span>
-            <span className="main-heading color-black">Alpha</span>
+            <span className="font-bold color-black">Alpha</span>
           </h3>
         </Link>
 
-        <ul className="flex flex-col gap-4 px-6 mt-10 font-medium text-[17px] text-black/80">
+        <ul className="flex flex-col gap-4 px-6 mt-10 font-medium text-base text-black/80">
           <Link href="/" onClick={toggleMenu}>
             <li className="hover-primary">Home</li>
           </Link>
@@ -68,7 +68,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "our-story"
-                    ? "max-h-60 opacity-100 mt-2 ml-5 text-base font-normal"
+                    ? "max-h-60 opacity-100 mt-2 ml-5 text-[15px] font-normal"
                     : "max-h-0 opacity-0"
                 }
               `}
@@ -94,7 +94,7 @@ const NavbarSM = () => {
               className={`transition-all duration-300 ease-in-out overflow-hidden
                 ${
                   subMenuOpen === "products"
-                    ? "max-h-60 opacity-100 mt-2 ml-5 text-base font-normal"
+                    ? "max-h-60 opacity-100 mt-2 ml-5 text-[15px] font-normal"
                     : "max-h-0 opacity-0"
                 }
               `}

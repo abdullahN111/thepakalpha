@@ -35,16 +35,16 @@ const Header = () => {
             className="mr-6"
           />
           <h3 className="relative text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
-            <span className="font-bold italic text-primary absolute text-[16px] xs:text-[17px] -top-2 -left-7">
+            <span className="font-bold italic text-primary absolute text-[16px] xs:text-[17px] -top-2 -left-8">
               Pak
             </span>
-            <span className="main-heading">Alpha</span>
+            <span className="font-bold">Alpha</span>
           </h3>
         </Link>
-        <div className="hidden lg:block mr-10">
+        <div className="hidden md:block mr-10">
           <NavbarLG />
         </div>
-        <div className="block lg:hidden mr-4 sm:mr-8">
+        <div className="block md:hidden mr-4 sm:mr-8">
           <NavbarSM />
         </div>
       </div>

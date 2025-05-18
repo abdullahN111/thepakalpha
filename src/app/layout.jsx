@@ -1,17 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import { Montserrat } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
+
+
 
 export const metadata = {
   title: "Pak Alpha Manufacturing",
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.className} antialiased`}
       >
         <Header />
         {children}

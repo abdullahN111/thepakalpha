@@ -25,8 +25,10 @@ const Footer = () => {
               className="mr-5"
             />
             <h3 className="relative text-lg sm:text-[22px] flex items-center">
-              <span className="font-bold italic text-primary text-[16px] sm:text-[17px] absolute -top-[6px] -left-7">Pak</span>
-              <span className="main-heading">Alpha</span>
+              <span className="font-bold italic text-primary text-[16px] sm:text-[17px] absolute -top-[6px] -left-8">
+                Pak
+              </span>
+              <span className="font-bold">Alpha</span>
             </h3>
           </Link>
           <p className="text-white/60 poppins-light max-w-[350px]">

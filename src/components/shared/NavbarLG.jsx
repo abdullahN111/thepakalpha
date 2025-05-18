@@ -6,11 +6,11 @@ import Link from "next/link";
 const NavbarLG = () => {
   return (
     <nav>
-      <ul className="flex items-center font-medium text-[17px]">
+      <ul className="flex items-center font-normal text-base">
         <Link href="/">
-          <li className="hover-primary py-[6px] px-5 lg:px-6">Home</li>
+          <li className="hover-primary py-[6px] px-4 lg:px-5">Home</li>
         </Link>
-        <li className="relative group cursor-pointer hover:text-black/80 rounded-tl-[25px] hover:bg-white py-[6px] px-5 lg:px-6">
+        <li className="relative group cursor-pointer hover:text-black/80 rounded-tl-[25px] hover:bg-white py-[6px] px-4 lg:px-5">
           <span className="inline-block py-2 group-hover:text-[#0a73cd]">
             Our Story ▾
           </span>
@@ -19,7 +19,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-base font-normal"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
             <li>
               <Link
@@ -33,7 +33,7 @@ const NavbarLG = () => {
           </ul>
         </li>
 
-        <li className="relative group cursor-pointer hover:text-black/80 rounded-tl-[25px] hover:bg-white py-[6px] px-5 lg:px-6">
+        <li className="relative group cursor-pointer hover:text-black/80 rounded-tl-[25px] hover:bg-white py-[6px] px-4 lg:px-5">
           <span className="inline-block py-2 group-hover:text-[#0a73cd]">
             Our Products ▾
           </span>
@@ -42,7 +42,7 @@ const NavbarLG = () => {
             className="absolute left-0 py-2 top-full w-full bg-white shadow-xl
       opacity-0 scale-y-95 translate-y-2 pointer-events-none 
       group-hover:opacity-100 group-hover:scale-y-100 group-hover:translate-y-0 
-      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-base font-normal"
+      group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
             {productsData.map((product, index) => (
               <div key={index}>
@@ -60,7 +60,7 @@ const NavbarLG = () => {
           </ul>
         </li>
         <Link href="/contact">
-          <li className="hover-primary py-[6px] px-5 lg:px-6">Contact Us</li>
+          <li className="hover-primary py-[6px] px-4 lg:px-5">Contact Us</li>
         </Link>
       </ul>
     </nav>

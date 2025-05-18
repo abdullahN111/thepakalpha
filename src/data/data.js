@@ -1,7 +1,8 @@
 import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innovation.jpg";
 import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
 import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
-import QualityFirst from "../.././public/images/aboutus/quality_first.png";import Banner16 from "../.././public/images/banner16.jpg";
+import QualityFirst from "../.././public/images/aboutus/quality_first.png";
+import Banner16 from "../.././public/images/banner16.jpg";
 import Banner14 from "../.././public/images/banner14.jpg";
 import Banner12 from "../.././public/images/banner12.jpg";
 import Banner18 from "../.././public/images/banner18.jpg";
@@ -15,7 +16,7 @@ export const heroData = [
   {
     id: 1,
     title: ["Build.", "Bond.", "Beautify."],
-    desc: "Pak Alpha Manufacturing is your trusted partner for high-quality manufacturing solutions, specializing in tile grout, tile bond, and wall putty.",
+    desc: "Creating stronger structures with premium tile adhesives and finishes that enhance every surface.",
     image: Banner15,
     buttonText: "Contact Us",
     buttonLink: "/contact",
@@ -30,19 +31,19 @@ export const heroData = [
   },
   {
     id: 3,
-    title: ["Quality.", "Reliability.", "Trust."],
-    desc: "Pak Alpha Manufacturing is your trusted partner for high-quality manufacturing solutions, specializing in tile grout, tile bond, and wall putty.",
+    title: ["Strength.", "Precision.", "Performance."],
+    desc: "Our expert-grade tile grout, bond, and wall putty deliver performance and consistency you can rely on.",
     image: Banner10,
     buttonText: "See Products",
     buttonLink: "#products",
   },
   {
     id: 4,
-    title: ["Innovate.", "Expand.", "Excel."],
-    desc: "From manufacturing to precision printing — quality that goes beyond borders.",
+    title: ["Reliable.", "Innovative.", "Trusted."],
+    desc: "Empowering your projects with reliable manufacturing and modern solutions tailored to evolving industry needs.",
     image: Banner18,
-    buttonText: "See Profile",
-    buttonLink: "/",
+    buttonText: "See More",
+    buttonLink: "#why-choose-us",
   },
 ];
 
@@ -72,8 +73,6 @@ export const aboutUsData = [
     image: QualityFirst,
   },
 ];
-
-
 
 export const messageData = [
   {

@@ -41,14 +41,14 @@ const Slide = ({ slide }) => {
         priority
         className="z-0"
       />
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/50 z-10" />
 
       <div
         className={`relative z-20 text-center px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-700 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-[34px] md:text-[40px] uppercase color-white font-medium leading-tight drop-shadow-xl">
+        <h1 className="text-[34px] md:text-[38px] uppercase color-white font-medium leading-tight drop-shadow-xl">
           <span className="flex flex-wrap justify-center gap-x-2">
             {slide.title.map((word, i) => (
               <span                key={i}
@@ -108,7 +108,7 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
       <ProductCardsButton
-        classes="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 flex items-center gap-4"
+        classes="absolute bottom-16 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-30 flex items-center gap-4"
         prevSlide={prevSlide}
         nextSlide={nextSlide}
       />
