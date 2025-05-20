@@ -2,15 +2,10 @@ import GrowthAndInnovation from "../.././public/images/aboutus/growth_and_innova
 import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
 import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
 import QualityFirst from "../.././public/images/aboutus/quality_first.png";
-import Banner16 from "../.././public/images/banner16.jpg";
 import Banner14 from "../.././public/images/banner14.jpg";
-import Banner12 from "../.././public/images/banner12.jpg";
 import Banner18 from "../.././public/images/banner18.jpg";
 import Banner10 from "../.././public/images/banner10.jpg";
-import Banner9 from "../.././public/images/banner9.jpg";
 import Banner15 from "../.././public/images/banner15.jpg";
-import Banner13 from "../.././public/images/banner13.jpg";
-import Banner17 from "../.././public/images/banner17.jpg";
 
 export const heroData = [
   {

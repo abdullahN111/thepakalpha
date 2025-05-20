@@ -38,23 +38,23 @@ const NavbarSM = () => {
             ✕
           </button>
         </div>
-        <Link href="/" className="flex items-center justify-start p-1 sm:p-2">
+        <Link href="/" className="absolute top-4 flex items-center justify-start p-1 sm:p-2">
           <Image
             src={Logo}
             alt="Pak Alpha Manufacturing"
             width={65}
             height={65}
-            className="mr-6"
+            className="mr-5"
           />
-          <h3 className="relative text-[16px] sm:text-[17px] flex gap-1 sm:gap-2 items-center">
-            <span className="font-bold italic text-primary text-base sm:text-[17px] absolute -top-[6px] -left-8">
+          <h3 className="relative text-[15px] sm:text-base flex gap-1 sm:gap-2 items-center">
+            <span className="font-bold italic text-primary absolute text-[14px] -top-[6px] -left-7">
               Pak
             </span>
             <span className="font-bold color-black">Alpha</span>
           </h3>
         </Link>
 
-        <ul className="flex flex-col gap-4 px-6 mt-10 font-medium text-base text-black/80">
+        <ul className="flex flex-col gap-4 px-6 mt-18 font-medium text-base text-black/80">
           <Link href="/" onClick={toggleMenu}>
             <li className="hover-primary">Home</li>
           </Link>

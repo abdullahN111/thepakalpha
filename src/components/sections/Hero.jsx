@@ -48,7 +48,7 @@ const Slide = ({ slide }) => {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-[34px] md:text-[38px] uppercase color-white font-medium leading-tight drop-shadow-xl">
+        <h1 className="text-3xl xs:text-[33px] md:text-[37px] uppercase color-white font-medium leading-tight drop-shadow-xl">
           <span className="flex flex-wrap justify-center gap-x-2">
             {slide.title.map((word, i) => (
               <span                key={i}
@@ -59,7 +59,7 @@ const Slide = ({ slide }) => {
             ))}
           </span>
         </h1>
-        <p className="mt-2 mb-6 text-base md:text-[17px] color-white font-normal italic drop-shadow-lg">
+        <p className="mt-2 mb-6 text-[15px] xs:text-base md:text-[17px] color-white font-normal italic drop-shadow-lg">
           {slide.desc}
         </p>
         <Link href={slide.buttonLink} passHref>
