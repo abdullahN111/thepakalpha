@@ -23,7 +23,7 @@ const ProductDetail = () => {
             <Image
               src={product.image}
               alt={product.title}
-              layout="fill"
+              fill
               className="object-cover rounded-tr-[30px] rounded-bl-[30px] shadow-md"
             />
           </div>
