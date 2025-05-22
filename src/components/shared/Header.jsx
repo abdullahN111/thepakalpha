@@ -32,6 +32,7 @@ const Header = () => {
             alt="Pak Alpha Manufacturing"
             width={80}
             height={80}
+            priority={true}
             className="mr-6"
           />
           <h3 className="relative text-lg xs:text-xl sm:text-[22px] flex gap-[5px] sm:gap-2 items-center">
