@@ -38,7 +38,6 @@ const Slide = ({ slide }) => {
         alt="Hero Background"
         layout="fill"
         objectFit="cover"
-        loading="eager"
         priority
         className="z-0"
       />
