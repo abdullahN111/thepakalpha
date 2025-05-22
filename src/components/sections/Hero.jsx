@@ -38,7 +38,6 @@ const Slide = ({ slide }) => {
         alt="Hero Background"
         layout="fill"
         objectFit="cover"
-        priority
         className="z-0"
       />
       <div className="absolute inset-0 bg-black/40 z-10" />

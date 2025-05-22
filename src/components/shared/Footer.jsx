@@ -25,7 +25,6 @@ const Footer = () => {
               alt="Pak Alpha Manufacturing"
               width={70}
               height={70}
-              priority
               className="mr-5"
             />
             <h3 className="relative text-lg sm:text-[22px] flex items-center">
