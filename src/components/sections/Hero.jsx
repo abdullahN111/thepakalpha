@@ -39,7 +39,7 @@ const Slide = ({ slide }) => {
         layout="fill"
         objectFit="cover"
         loading="eager"
-        priority={true}
+        priority
         className="z-0"
       />
       <div className="absolute inset-0 bg-black/40 z-10" />
