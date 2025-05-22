@@ -85,6 +85,8 @@ const Products = () => {
                         <Image
                           src={product.image}
                           alt={product.title}
+                          priority={true}
+                          loading="eager"
                           className="w-full h-full object-cover"
                         />
                         <div className="absolute bottom-0 bg-black/50 w-full px-4 py-2">

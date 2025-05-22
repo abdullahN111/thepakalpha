@@ -64,6 +64,8 @@ const AboutUs = () => {
                       alt={item.title}
                       className="w-full h-auto object-cover"
                       sizes="100vw"
+                      priority={true}
+                      loading="eager"
                       width={0}
                       height={0}
                     />

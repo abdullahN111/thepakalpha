@@ -38,10 +38,11 @@ const Slide = ({ slide }) => {
         alt="Hero Background"
         layout="fill"
         objectFit="cover"
-        priority
+        loading="eager"
+        priority={true}
         className="z-0"
       />
-      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="absolute inset-0 bg-black/40 z-10" />
 
       <div
         className={`relative z-20 text-center px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-700 ${
@@ -51,7 +52,8 @@ const Slide = ({ slide }) => {
         <h1 className="text-3xl xs:text-[33px] md:text-[37px] uppercase color-white font-medium leading-tight drop-shadow-xl">
           <span className="flex flex-wrap justify-center gap-x-2">
             {slide.title.map((word, i) => (
-              <span                key={i}
+              <span
+                key={i}
                 className="color-white hover-primary cursor-pointer transition duration-300 ease-in-out"
               >
                 {word}

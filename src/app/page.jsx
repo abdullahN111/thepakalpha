@@ -4,6 +4,7 @@ import MessageCEO from "@/components/sections/MessageCEO";
 import Products from "@/components/sections/Products";
 
 import FigureFacts from "@/components/sections/FigureFacts";
+import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <Products />
       <FigureFacts />
+      <WhyChooseUs />
       <MessageCEO />
     </main>
   );
