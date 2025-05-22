@@ -19,7 +19,7 @@ const NavbarSM = () => {
 
   return (
     <>
-      <button onClick={toggleMenu}>
+      <button onClick={toggleMenu} aria-label="Open Menu">
         <HiMenu className="color-white text-[26px] sm:text-3xl cursor-pointer" />
       </button>
 
@@ -34,11 +34,12 @@ const NavbarSM = () => {
           <button
             onClick={toggleMenu}
             className="text-black text-xl cursor-pointer"
+            aria-label="Close Menu"
           >
             ✕
           </button>
         </div>
-        <Link href="/" className="absolute top-4 flex items-center justify-start p-1 sm:p-2">
+        <Link href="/" className="absolute top-4 flex items-center justify-start p-1 sm:p-2" aria-label="Pak Alpha Manufacturing">
           <Image
             src={Logo}
             alt="Pak Alpha Manufacturing"

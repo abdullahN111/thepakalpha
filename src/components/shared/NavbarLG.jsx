@@ -45,7 +45,7 @@ const NavbarLG = () => {
       group-hover:pointer-events-auto transition-all duration-300 ease-in-out z-50 text-[15px] font-normal"
           >
             {productsData.map((product, index) => (
-              <div key={index}>
+              <ul key={index}>
                 <li>
                   <Link
                     href={`/product/${product.id}`}
@@ -55,7 +55,7 @@ const NavbarLG = () => {
                   </Link>
                 </li>
                 <hr className="border-t border-black/40 mx-4 mb-2" />
-              </div>
+              </ul>
             ))}
           </ul>
         </li>

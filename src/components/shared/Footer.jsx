@@ -15,7 +15,11 @@ const Footer = () => {
     <footer className="max-width mx-auto bg-black text-white">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 py-10 px-6 md:px-20">
         <div className="flex flex-col gap-8">
-          <Link href="/" className="flex items-center gap-2">
+          <Link
+            href="/"
+            className="flex items-center gap-2"
+            aria-label="Pak Alpha Manufacturing"
+          >
             <Image
               src={Logo}
               alt="Pak Alpha Manufacturing"

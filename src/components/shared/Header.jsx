@@ -26,7 +26,7 @@ const Header = () => {
         text-white`}
     >
       <div className="flex justify-between items-center py-5 px-2 sm:px-8 h-19">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center" aria-label="Pak Alpha Manufacturing">
           <Image
             src={Logo}
             alt="Pak Alpha Manufacturing"
