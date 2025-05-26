@@ -46,6 +46,8 @@ const NavbarSM = () => {
             width={65}
             height={65}
             className="mr-5"
+            priority
+            loading="eager"
           />
           <h3 className="relative text-[15px] sm:text-base flex gap-1 sm:gap-2 items-center">
             <span className="font-bold italic text-primary absolute text-[14px] -top-[6px] -left-7">
