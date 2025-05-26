@@ -50,7 +50,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </Link>
             <Link
-              href="https://www.instagram.com"
+              href="#"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
               area-label="Instagram"
               target="_blank"

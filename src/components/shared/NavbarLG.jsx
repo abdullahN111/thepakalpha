@@ -7,7 +7,7 @@ const NavbarLG = () => {
   return (
     <nav>
       <ul className="flex items-center font-normal text-base">
-        <Link href="/">
+        <Link href="/" aria-label="Home">
           <li className="hover-primary py-[6px] px-4 lg:px-5">Home</li>
         </Link>
         <li className="relative group cursor-pointer hover:text-black/80 rounded-tl-[25px] hover:bg-white py-[6px] px-4 lg:px-5">
@@ -25,6 +25,7 @@ const NavbarLG = () => {
               <Link
                 href="/our-story"
                 className="block px-5 lg:px-6 py-2 hover-primary"
+                aria-label="Our Story"
               >
                 Our Story
               </Link>
@@ -50,6 +51,7 @@ const NavbarLG = () => {
                   <Link
                     href={`/product/${product.id}`}
                     className="block px-5 lg:px-6 py-2 hover-primary"
+                    aria-label={product.title}
                   >
                     {product.title}
                   </Link>
@@ -59,7 +61,7 @@ const NavbarLG = () => {
             ))}
           </ul>
         </li>
-        <Link href="/contact">
+        <Link href="/contact" aria-label="Contact Us">
           <li className="hover-primary py-[6px] px-4 lg:px-5">Contact Us</li>
         </Link>
       </ul>

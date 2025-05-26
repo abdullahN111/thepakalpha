@@ -46,6 +46,8 @@ const NavbarSM = () => {
             width={65}
             height={65}
             className="mr-5"
+            priority
+            loading="eager"
           />
           <h3 className="relative text-[15px] sm:text-base flex gap-1 sm:gap-2 items-center">
             <span className="font-bold italic text-primary absolute text-[14px] -top-[6px] -left-7">
@@ -56,7 +58,7 @@ const NavbarSM = () => {
         </Link>
 
         <ul className="flex flex-col gap-4 px-6 mt-18 font-medium text-base text-black/80">
-          <Link href="/" onClick={toggleMenu}>
+          <Link href="/" onClick={toggleMenu} aria-label="Home">
             <li className="hover-primary">Home</li>
           </Link>
           <hr className="border-t border-black/40 mb-2" />
@@ -79,6 +81,7 @@ const NavbarSM = () => {
                   href="/our-story"
                   onClick={toggleMenu}
                   className="block text-black/80 hover:text-[#0a73cd] py-2"
+                  aria-label="Our Story"
                 >
                   Our Story
                 </Link>
@@ -106,6 +109,7 @@ const NavbarSM = () => {
                     href={`/product/${product.id}`}
                     onClick={toggleMenu}
                     className="block text-black/80 hover:text-[#0a73cd] py-2"
+                    aria-label={product.title}
                   >
                     {product.title}
                   </Link>
@@ -115,7 +119,7 @@ const NavbarSM = () => {
           </li>
           <hr className="border-t border-black/40 mb-2" />
 
-          <Link href="/contact" onClick={toggleMenu}>
+          <Link href="/contact" onClick={toggleMenu} aria-label="Contact Us">
             <li className="hover-primary">Contact Us</li>
           </Link>
         </ul>

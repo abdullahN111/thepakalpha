@@ -16,7 +16,7 @@ const FooterLinks = () => {
         <h3 className="font-bold mb-4">Build Better</h3>
         <ul className="space-y-2 text-white/60 poppins-light">
           <li>
-            <Link href="/our-story">Our Story</Link>
+            <Link href="/our-story" aria-label="Our Story">Our Story</Link>
           </li>
         </ul>
       </div>
@@ -26,7 +26,7 @@ const FooterLinks = () => {
         <ul className="space-y-2 text-white/60 poppins-light">
           {productsData.map((product, index) => (
             <li key={index}>
-              <Link href={`/product/${product.id}`}>{product.title}</Link>
+              <Link href={`/product/${product.id}`} aria-label={product.title}>{product.title}</Link>
             </li>
           ))}
         </ul>
@@ -36,11 +36,11 @@ const FooterLinks = () => {
         <h3 className="font-bold mb-4">Important Links</h3>
         <ul className="space-y-2 text-white/60 poppins-light">
           <li>
-            <Link href="/our-story">Our Story</Link>
+            <Link href="/our-story" aria-label="Our Story">Our Story</Link>
           </li>
       
           <li>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact" aria-label="Contact Us">Contact Us</Link>
           </li>
         </ul>
       </div>

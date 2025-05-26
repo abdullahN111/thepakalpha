@@ -32,6 +32,7 @@ const Header = () => {
             alt="Pak Alpha Manufacturing"
             width={80}
             height={80}
+            priority
             loading="eager"
             className="mr-6"
           />
