@@ -26,6 +26,8 @@ const Footer = () => {
               width={70}
               height={70}
               className="mr-5"
+              priority 
+              loading="eager"
             />
             <h3 className="relative text-lg sm:text-[22px] flex items-center">
               <span className="font-bold italic text-primary text-[16px] sm:text-[17px] absolute -top-[6px] -left-8">
@@ -42,30 +44,40 @@ const Footer = () => {
             <Link
               href="#"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
+              aria-label="LinkedIn"
+              target="_blank"
             >
               <FaLinkedin size={24} />
             </Link>
             <Link
-              href="#"
+              href="https://www.instagram.com"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
+              area-label="Instagram"
+              target="_blank"
             >
               <FaInstagram size={24} />
             </Link>
             <Link
               href="#"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
+              area-label="Facebook"
+              target="_blank"
             >
               <FaFacebook size={24} />
             </Link>
             <Link
               href="#"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
+              area-label="X Twitter"
+              target="_blank"
             >
               <FaXTwitter size={24} />
             </Link>
             <Link
               href="#"
               className="hover:bg-[#0a73cd] p-2 rounded-full transition duration-300"
+              area-label="YouTube"
+              target="_blank"
             >
               <FaYoutube size={24} />
             </Link>
@@ -76,7 +88,7 @@ const Footer = () => {
           <h2 className="text-[17px] sm:text-lg font-bold mb-4 md:mb-2">
             Stay Updated!
           </h2>
-          <div className="flex">
+          <form className="flex">
             <input
               type="email"
               placeholder="Enter your email"
@@ -85,7 +97,7 @@ const Footer = () => {
             <button className="px-4 xs:px-5 lg:px-6 py-2 xs:py-[10px] lg:py-3 bg-primary text-white/80 transition duration-300 rounded-tr-[20px] cursor-pointer hover:bg-[#0a72cde6] poppins-medium">
               Submit
             </button>
-          </div>
+          </form>
         </div>
       </div>
       <FooterLinks />
@@ -96,11 +108,7 @@ const Footer = () => {
           <span>All Rights Reserved.</span>
         </div>
         <div className="flex space-x-6">
-          {/* <Link href="/terms" className="flex items-center gap-2">
-            <span className="text-2xl">&#x2022; </span>{" "}
-            <span>Terms and Conditions</span>
-          </Link> */}
-          <Link href="/privacy-policy" className="flex items-center gap-1">
+          <Link href="/privacy-policy" className="flex items-center gap-1" area-label="Privacy Policy">
             <span className="text-2xl">&#x2022; </span>{" "}
             <span>Privacy Policy</span>
           </Link>

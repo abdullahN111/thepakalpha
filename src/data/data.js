@@ -3,7 +3,7 @@ import GlobalVision from "../.././public/images/aboutus/global_vision.jpg";
 import StrongPartnership from "../.././public/images/aboutus/strong_partnership.jpg";
 import QualityFirst from "../.././public/images/aboutus/quality_first.png";
 import Banner14 from "../.././public/images/banner14.jpg";
-import Banner18 from "../.././public/images/banner18.jpg";
+// import Banner18 from "../.././public/images/banner18.jpg";
 import Banner10 from "../.././public/images/banner10.jpg";
 import Banner15 from "../.././public/images/banner15.jpg";
 
@@ -32,14 +32,14 @@ export const heroData = [
     buttonText: "See Products",
     buttonLink: "#products",
   },
-  {
-    id: 4,
-    title: ["Reliable.", "Innovative.", "Trusted."],
-    desc: "Empowering your projects with reliable manufacturing and modern solutions tailored to evolving industry needs.",
-    image: Banner18,
-    buttonText: "See More",
-    buttonLink: "#why-choose-us",
-  },
+  // {
+  //   id: 4,
+  //   title: ["Reliable.", "Innovative.", "Trusted."],
+  //   desc: "Empowering your projects with reliable manufacturing and modern solutions tailored to evolving industry needs.",
+  //   image: Banner18,
+  //   buttonText: "See More",
+  //   buttonLink: "#why-choose-us",
+  // },
 ];
 
 export const aboutUsData = [
