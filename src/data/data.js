@@ -141,3 +141,58 @@ export const figureFactsData = [
     plus: "M+",
   },
 ];
+
+
+
+export const privacyPolicyData = [
+  {
+    title: "Introduction",
+    content:
+      "Pak Alpha Manufacturing values your privacy and is committed to protecting your personal data. This privacy policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or engage with our services."
+  },
+  {
+    title: "Information We Collect",
+    content:
+      "We may collect personal identification information including your name, email address, phone number, and company details when you fill out contact forms or request information. We also gather non-personal information such as browser type, IP address, and pages visited through cookies and analytics tools."
+  },
+  {
+    title: "How We Use Your Information",
+    content:
+      "We use the information collected to respond to inquiries, provide our services, improve user experience, and send relevant updates about our products and business. Your information may also be used for internal record-keeping and compliance purposes."
+  },
+  {
+    title: "Sharing of Information",
+    content:
+      "We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information with our business partners and trusted affiliates for the purposes outlined above."
+  },
+  {
+    title: "Data Security",
+    content:
+      "We implement appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information."
+  },
+  {
+    title: "Cookies and Tracking",
+    content:
+      "Our website may use cookies to enhance user experience. Users may choose to set their web browser to refuse cookies or alert them when cookies are being sent. Disabling cookies may affect the functionality of some parts of the site."
+  },
+  {
+    title: "Third-Party Services",
+    content:
+      "We may use third-party tools for analytics or communication. These services may collect data directly from you and operate under their own privacy policies. We are not responsible for the privacy practices of external websites."
+  },
+  {
+    title: "User Rights",
+    content:
+      "You have the right to access, update, or delete your personal information. You may also withdraw your consent to our processing of your data at any time by contacting us."
+  },
+  {
+    title: "Changes to This Policy",
+    content:
+      "Pak Alpha Manufacturing reserves the right to update this privacy policy at any time. Changes will be posted on this page with an updated effective date. We encourage users to frequently check this page to stay informed."
+  },
+  {
+    title: "Contact Us",
+    content:
+      "If you have any questions about this Privacy Policy or the practices of this site, please contact us at info@thepakalpha.com or visit us at our facility in Al-Kharj Industrial City, Modon, Riyadh."
+  }
+];

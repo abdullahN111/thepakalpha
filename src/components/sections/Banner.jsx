@@ -15,7 +15,7 @@ const Banner = ({ banner, title }) => {
       />
       <div className="absolute inset-0 bg-black/70 z-10" />
       <div className="relative z-20 text-center px-4 sm:px-6 md:px-8 max-w-full sm:max-w-xl md:max-w-2xl transform transition-all duration-200">
-        <h1 className="text-[34px] md:text-[40px] text-white/80 opacity-60 font-bold leading-tight drop-shadow-xl">
+        <h1 className="text-[32px] md:text-[38px] text-white/80 opacity-60 font-bold leading-tight drop-shadow-xl">
           {title}
         </h1>
       </div>
