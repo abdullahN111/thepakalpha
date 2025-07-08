@@ -1,6 +1,9 @@
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
+import toast from "react-hot-toast";
+
 import {
   FaLinkedin,
   FaInstagram,
@@ -10,8 +13,35 @@ import {
 } from "react-icons/fa6";
 import Logo from "../../../public/images/logo.png";
 import FooterLinks from "./FooterLinks";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+
+    const { message } = await res.json(); 
+
+    toast(message === "Success"
+      ? "✅ Email submitted!"
+      : message === "Email already submitted"
+      ? "⚠️ Email already exists!"
+      : "❌ Something went wrong"
+    );
+
+    if (message === "Success") setEmail("");
+  } catch (err) {
+    toast.error("❌ Network error. Try again.");
+  }
+};
 
 
   return (
@@ -29,7 +59,7 @@ const Footer = () => {
               width={70}
               height={70}
               className="mr-5"
-              priority 
+              priority
               loading="eager"
             />
             <h3 className="relative text-lg sm:text-[22px] flex items-center">
@@ -91,14 +121,19 @@ const Footer = () => {
           <h2 className="text-[17px] sm:text-lg font-bold mb-4 md:mb-2">
             Stay Updated!
           </h2>
-          <form className="flex">
+          <form className="flex" onSubmit={handleSubmit}>
             <input
               type="email"
               placeholder="Enter your email"
               className="text-sm md:text-base w-[160px] xs:w-[180px] xsx:w-[220px] md:w-[250px] px-3 xs:px-[14px] md:px-4 py-2 xs:py-[10px] lg:py-3 bg-white text-black/80 focus:outline-none rounded-bl-[20px]"
-            
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="px-4 xs:px-5 lg:px-6 py-2 xs:py-[10px] lg:py-3 bg-primary text-white/80 transition duration-300 rounded-tr-[20px] cursor-pointer hover:bg-[#0a72cde6] poppins-medium" type="submit">
+            <button
+              className="px-4 xs:px-5 lg:px-6 py-2 xs:py-[10px] lg:py-3 bg-primary text-white/80 transition duration-300 rounded-tr-[20px] cursor-pointer hover:bg-[#0a72cde6] poppins-medium"
+              type="submit"
+            >
               Submit
             </button>
           </form>
@@ -112,7 +147,11 @@ const Footer = () => {
           <span>All Rights Reserved.</span>
         </div>
         <div className="flex space-x-6">
-          <Link href="/privacy-policy" className="flex items-center gap-1" area-label="Privacy Policy">
+          <Link
+            href="/privacy-policy"
+            className="flex items-center gap-1"
+            area-label="Privacy Policy"
+          >
             <span className="text-2xl">&#x2022; </span>{" "}
             <span>Privacy Policy</span>
           </Link>

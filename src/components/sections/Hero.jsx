@@ -36,7 +36,7 @@ const Slide = ({ slide }) => {
       <Image
         src={slide.image}
         alt="Hero Background"
-        layout="fill"
+        fill
         objectFit="cover"
         className="z-0"
       />

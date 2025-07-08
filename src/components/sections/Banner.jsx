@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 
 const Banner = ({ banner, title }) => {
@@ -8,7 +6,7 @@ const Banner = ({ banner, title }) => {
       <Image
         src={banner}
         alt="Pak Alpha Manufacturing"
-        layout="fill"
+        fill
         objectFit="cover"
         priority
         className="z-0 opacity-60"
