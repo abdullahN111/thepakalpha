@@ -3,7 +3,7 @@ import Hero from "@/components/sections/Hero";
 import MessageCEO from "@/components/sections/MessageCEO";
 import Products from "@/components/sections/Products";
 
-import FigureFacts from "@/components/sections/FigureFacts";
+import FigureFacts from "@/components/sections/OurProcess";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 
 export default function Home() {

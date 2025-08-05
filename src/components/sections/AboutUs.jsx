@@ -70,7 +70,7 @@ const AboutUs = () => {
                       height={0}
                     />
 
-                    <div className="absolute inset-0 bg-black/30 text-white flex items-end transition-all duration-300 p-4 group-hover:bg-black/60">
+                    <div className="absolute inset-0 bg-black/30 text-white flex items-end transition-all duration-300 p-4 group-hover:bg-black/70">
                       <p className="text-[13px] xs:text-[15px] sm:text-[17px] w-full line-clamp-1 group-hover:line-clamp-none transition-all duration-300 ease-in-out max-h-[3.5rem] group-hover:max-h-[100%] overflow-hidden poppins-regular">
                         {item.desc}
                       </p>

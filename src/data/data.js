@@ -13,8 +13,8 @@ export const heroData = [
     title: ["Build.", "Bond.", "Beautify."],
     desc: "Creating stronger structures with premium tile adhesives and finishes that enhance every surface.",
     image: Banner15,
-    buttonText: "Contact Us",
-    buttonLink: "/contact",
+    buttonText: "Download Profile",
+    buttonLink: "/Pak_Alpha.pdf",
   },
   {
     id: 2,
@@ -103,44 +103,69 @@ export const messageData = [
   },
 ];
 
-export const figureFactsData = [
+export const ourProcessData = [
   {
     id: 1,
-    title: "Employees",
-    count: 200,
-    plus: "+",
+    title: "Material Selection",
+    desc: "Handpicked raw materials checked for quality.",
+
   },
   {
     id: 2,
-    title: "Production Lines",
-    count: 10,
-    plus: "+",
+    title: "Manufacturing",
+    desc: "Produced in our Riyadh facility with strict QC.",
   },
   {
     id: 3,
-    title: "Customers",
-    count: 1000,
-    plus: "+",
+    title: "Packaging",
+    desc: "Safe, moisture-proof, and ready for transit.",
   },
   {
     id: 4,
-    title: "Projects",
-    count: 200,
-    plus: "+",
+    title: "Delivery",
+    desc: "Delivered to your project site efficiently.",
+
   },
-  {
-    id: 5,
-    title: "Products Shipped/Daily",
-    count: 200,
-    plus: "+",
-  },
-  {
-    id: 6,
-    title: "Turnover/Daily",
-    count: 1,
-    plus: "M+",
-  },
+  
 ];
+// export const figureFactsData = [
+//   {
+//     id: 1,
+//     title: "Employees",
+//     count: 200,
+//     plus: "+",
+//   },
+//   {
+//     id: 2,
+//     title: "Production Lines",
+//     count: 10,
+//     plus: "+",
+//   },
+//   {
+//     id: 3,
+//     title: "Customers",
+//     count: 1000,
+//     plus: "+",
+//   },
+//   {
+//     id: 4,
+//     title: "Projects",
+//     count: 200,
+//     plus: "+",
+//   },
+//   {
+//     id: 5,
+//     title: "Products Shipped/Daily",
+//     count: 200,
+//     plus: "+",
+//   },
+//   {
+//     id: 6,
+//     title: "Turnover/Daily",
+//     count: 1,
+//     plus: "M+",
+//   },
+// ];
 
 
 

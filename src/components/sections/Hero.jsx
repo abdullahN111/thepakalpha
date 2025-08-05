@@ -62,7 +62,17 @@ const Slide = ({ slide }) => {
         <p className="mt-2 mb-6 text-[15px] xs:text-base md:text-[17px] color-white font-normal italic drop-shadow-lg">
           {slide.desc}
         </p>
-        <Link href={slide.buttonLink} passHref>
+        {slide.buttonText == "Download Profile"? (
+          <a href={slide.buttonLink} download>
+          <PrimaryButton
+            text={slide.buttonText}
+            borderColor="border-white"
+            textColor="color-white"
+            arrowColor="color-white"
+          />
+        </a>
+        ): (
+          <Link href={slide.buttonLink} passHref>
           <PrimaryButton
             text={slide.buttonText}
             borderColor="border-white"
@@ -70,6 +80,7 @@ const Slide = ({ slide }) => {
             arrowColor="color-white"
           />
         </Link>
+        )}
       </div>
     </div>
   );

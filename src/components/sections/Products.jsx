@@ -37,7 +37,7 @@ const Products = () => {
 
   return (
     <section
-      className="max-width mx-auto bg-black/30 relative w-full overflow-hidden"
+      className="max-width mx-auto bg-black/90 relative w-full overflow-hidden"
       id="products"
     >
       <div
