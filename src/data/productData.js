@@ -1,5 +1,5 @@
 import TileGrout from "../.././public/images/products/tile_grout.png";
-import TileBond from "../.././public/images/products/tile_bond.png";
+import TileBond from "../.././public/images/products/tile_bond.jpg";
 import WallPutty from "../.././public/images/products/wall_putty.png";
 
 const instructionTitles = [
