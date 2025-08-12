@@ -66,10 +66,10 @@ const FigureFacts = ({ showButton = true }) => {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              <h3 className="text-xl sm:text-2xl font-semibold text-primary mb-2">
+              <h3 className="text-xl sm:text-[23px] font-semibold text-primary mb-[6px] text-center">
                 {item.title}
               </h3>
-              <p className="text-gray-800 text-base sm:text-lg">{item.desc}</p>
+              <p className="text-gray-800 text-base sm:text-lg text-center">{item.desc}</p>
             </div>
           ))}
         </div>
